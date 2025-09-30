@@ -149,6 +149,14 @@ teamCarouselTemplate.innerHTML = `
   margin: 0 auto;
   z-index:3;
 }
+
+.player__img:not(.player__img--sponsor) {
+  height: 85%;
+  width: auto;
+  max-width: 90%;
+  object-fit: cover;
+  object-position: center center;
+}
 .player__img--sponsor {
   position: relative;
   height: 100%;
