@@ -1,0 +1,525 @@
+[1mdiff --git a/api/senior_season.mjs b/api/senior_season.mjs[m
+[1mindex 4752911..99bb10b 100755[m
+[1m--- a/api/senior_season.mjs[m
+[1m+++ b/api/senior_season.mjs[m
+[36m@@ -1,334 +1,312 @@[m
+ let SEASON_SENIOR_A = [[m
+   // Jornada 1[m
+   {[m
+[31m-    imgURL: "public/img/escudos/cd_tenerife.png",[m
+[31m-    date: "Sep 07, 2024 17:00:00",[m
+[31m-    shortDate: "07/09/24",[m
+[32m+[m[32m    imgURL: "public/img/escudos/cordoba.png",[m[41m[m
+[32m+[m[32m    date: "Sep 07, 2025 11:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "07/09/25",[m[41m[m
+     isLocal: false,[m
+     result: "2-2",[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIATENERIFE",[m
+[32m+[m[32m    hashtag: "#OLYMPIACORDOBA",[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  // Copa de la Reina - 1ª Eliminatoria[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    imgURL: "public/img/escudos/getafe.png",[m[41m[m
+[32m+[m[32m    date: "Sep 10, 2025 20:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "10/09/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "5-3",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+[32m+[m[32m    liveURL: "",[m[41m[m
+[32m+[m[32m    hashtag: "#OLYMPIAGETAFE",[m[41m[m
+   },[m
+   // Jornada 2[m
+   {[m
+[31m-    imgURL: "public/img/escudos/caceres.png",[m
+[31m-    date: "Sep 15, 2024 19:00:00",[m
+[31m-    shortDate: "15/09/24",[m
+[32m+[m[32m    imgURL: "public/img/escudos/malaga.png",[m[41m[m
+[32m+[m[32m    date: "Sep 14, 2025 17:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "14/09/25",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "2-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "2-1",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIACACERES",[m
+[32m+[m[32m    hashtag: "#OLYMPIAMALAGA",[m[41m[m
+   },[m
+   // Jornada 3[m
+   {[m
+[31m-    imgURL: "public/img/escudos/guiniguada.png",[m
+[31m-    date: "Sep 22, 2024 10:00:00",[m
+[31m-    shortDate: "22/09/24",[m
+[31m-    isLocal: false,[m
+[31m-    result: "0-2",[m
+[32m+[m[32m    imgURL: "public/img/escudos/union_viera.png",[m[41m[m
+[32m+[m[32m    date: "Sep 21, 2025 11:15:00",[m[41m[m
+[32m+[m[32m    shortDate: "21/09/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "6-1",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAGUINIGUADA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAVIERA",[m[41m[m
+   },[m
+   // Jornada 4[m
+   {[m
+[31m-    imgURL: "public/img/escudos/valencia.png",[m
+[31m-    date: "Sep 29, 2024 17:00:00",[m
+[31m-    shortDate: "29/09/24",[m
+[32m+[m[32m    imgURL: "public/img/escudos/sporting_huelva.png",[m[41m[m
+[32m+[m[32m    date: "Sep 28, 2025 12:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "28/09/25",[m[41m[m
+[32m+[m[32m    isLocal: false,[m[41m[m
+[32m+[m[32m    result: "2-1",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+[32m+[m[32m    liveURL: "",[m[41m[m
+[32m+[m[32m    hashtag: "#OLYMPIAHUELVA",[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  // Copa de la Reina - 2ª Eliminatoria[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    imgURL: "public/img/escudos/osasuna.png",[m[41m[m
+[32m+[m[32m    date: "Oct 01, 2025 20:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "01/10/25",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "2-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAVALENCIA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAOSASUNA",[m[41m[m
+   },[m
+   // Jornada 5[m
+   {[m
+[31m-    imgURL: "public/img/escudos/la_destila.png",[m
+[31m-    date: "Oct 06, 2024 19:00:00",[m
+[31m-    shortDate: "06/10/24",[m
+[31m-    isLocal: false,[m
+[31m-    result: "0-6",[m
+[32m+[m[32m    imgURL: "public/img/escudos/juan_grande.png",[m[41m[m
+[32m+[m[32m    date: "Oct 04, 2025 16:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "04/10/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIALADESTILA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAJUANGRANDE",[m[41m[m
+   },[m
+   // Jornada 6[m
+   {[m
+[31m-    imgURL: "public/img/escudos/madrid_cf.png",[m
+[31m-    date: "Oct 13, 2024 19:00:00",[m
+[31m-    shortDate: "13/10/24",[m
+[31m-    isLocal: true,[m
+[31m-    result: "1-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    imgURL: "public/img/escudos/betis.png",[m[41m[m
+[32m+[m[32m    date: "Oct 12, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "12/10/25",[m[41m[m
+[32m+[m[32m    isLocal: false,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAMADRIDCF",[m
+[32m+[m[32m    hashtag: "#OLYMPIABETIS",[m[41m[m
+   },[m
+   // Jornada 7[m
+   {[m
+[31m-    imgURL: "public/img/escudos/costa_adeje.png",[m
+[31m-    date: "Oct 20, 2024 19:00:00",[m
+[31m-    shortDate: "20/10/24",[m
+[31m-    isLocal: false,[m
+[31m-    result: "2-1",[m
+[32m+[m[32m    imgURL: "public/img/escudos/getafe.png",[m[41m[m
+[32m+[m[32m    date: "Oct 19, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "19/10/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIACOSTAADEJE",[m
+[32m+[m[32m    hashtag: "#OLYMPIAGETAFE",[m[41m[m
+   },[m
+   // Jornada 8[m
+   {[m
+[31m-    imgURL: "public/img/escudos/femarguin.png",[m
+[31m-    date: "Oct 27, 2024 17:00:00",[m
+[31m-    shortDate: "27/10/24",[m
+[31m-    isLocal: true,[m
+[31m-    result: "3-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    imgURL: "public/img/escudos/granada.png",[m[41m[m
+[32m+[m[32m    date: "Nov 02, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "02/11/25",[m[41m[m
+[32m+[m[32m    isLocal: false,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAFEMARGUIN",[m
+[32m+[m[32m    hashtag: "#OLYMPIAGRANADA",[m[41m[m
+   },[m
+   // Jornada 9[m
+   {[m
+[31m-    imgURL: "public/img/escudos/cordoba.png",[m
+[31m-    date: "Nov 02, 2024 13:00:00",[m
+[31m-    shortDate: "02/11/24",[m
+[31m-    isLocal: false,[m
+[31m-    result: "0-1",[m
+[32m+[m[32m    imgURL: "public/img/escudos/cacereno.png",[m[41m[m
+[32m+[m[32m    date: "Nov 09, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "09/11/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIACORDOBA",[m
+[32m+[m[32m    hashtag: "#OLYMPIACACERENO",[m[41m[m
+   },[m
+   // Jornada 10[m
+   {[m
+[31m-    imgURL: "public/img/escudos/malaga.png",[m
+[31m-    date: "Nov 10, 2024 19:00:00",[m
+[31m-    shortDate: "10/11/24",[m
+[31m-    isLocal: true,[m
+[31m-    result: "0-3",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    imgURL: "public/img/escudos/pozuelo.png",[m[41m[m
+[32m+[m[32m    date: "Nov 16, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "16/11/25",[m[41m[m
+[32m+[m[32m    isLocal: false,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAMALAGA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAPOZUELO",[m[41m[m
+   },[m
+   // Jornada 11[m
+   {[m
+[31m-    imgURL: "public/img/escudos/levante.png",[m
+[31m-    date: "Nov 17, 2024 19:00:00",[m
+[31m-    shortDate: "17/11/24",[m
+[31m-    isLocal: false,[m
+[31m-    result: "4-3",[m
+[32m+[m[32m    imgURL: "public/img/escudos/guiniguada.png",[m[41m[m
+[32m+[m[32m    date: "Nov 23, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "23/11/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIALEVANTE",[m
+[32m+[m[32m    hashtag: "#OLYMPIAGUINIGUADA",[m[41m[m
+   },[m
+   // Jornada 12[m
+   {[m
+[31m-    imgURL: "public/img/escudos/real_union_tenerife.png",[m
+[31m-    date: "Nov 24, 2024 19:00:00",[m
+[31m-    shortDate: "24/11/24",[m
+[31m-    isLocal: true,[m
+[31m-    result: "0-2",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    imgURL: "public/img/escudos/femarguin.png",[m[41m[m
+[32m+[m[32m    date: "Dec 07, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "07/12/25",[m[41m[m
+[32m+[m[32m    isLocal: false,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIARUTENERIFE",[m
+[32m+[m[32m    hashtag: "#OLYMPIAFEMARGUIN",[m[41m[m
+   },[m
+   // Jornada 13[m
+   {[m
+[31m-    imgURL: "public/img/escudos/pozuelo.png",[m
+[31m-    date: "Nov 30, 2024 19:00:00",[m
+[31m-    shortDate: "30/11/24",[m
+[31m-    isLocal: false,[m
+[31m-    result: "2-2",[m
+[32m+[m[32m    imgURL: "public/img/escudos/sport_extremadura.png",[m[41m[m
+[32m+[m[32m    date: "Dec 14, 2025 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "14/12/25",[m[41m[m
+[32m+[m[32m    isLocal: true,[m[41m[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAPOZUELO",[m
+[32m+[m[32m    hashtag: "#OLYMPIAEXTREMADURA",[m[41m[m
+   },[m
+   // Jornada 14[m
+   {[m
+     imgURL: "public/img/escudos/juan_grande.png",[m
+[31m-    date: "Dec 08, 2024 17:00:00",[m
+[31m-    shortDate: "08/12/24",[m
+[32m+[m[32m    date: "Jan 11, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "11/01/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "2-2",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+     hashtag: "#OLYMPIAJUANGRANDE",[m
+   },[m
+   // Jornada 15[m
+   {[m
+[31m-    imgURL: "public/img/escudos/elche.png",[m
+[31m-    date: "Dec 15, 2024 18:00:00",[m
+[31m-    shortDate: "15/12/24",[m
+[32m+[m[32m    imgURL: "public/img/escudos/cordoba.png",[m[41m[m
+[32m+[m[32m    date: "Jan 18, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "18/01/26",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "2-3",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAELCHE",[m
+[32m+[m[32m    hashtag: "#OLYMPIACORDOBA",[m[41m[m
+   },[m
+   // Jornada 16[m
+   {[m
+[31m-    imgURL: "public/img/escudos/cd_tenerife.png",[m
+[31m-    date: "Jan 12, 2025 17:00:00",[m
+[31m-    shortDate: "12/01/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/betis.png",[m[41m[m
+[32m+[m[32m    date: "Feb 01, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "01/02/26",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "0-2",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIATENERIFE",[m
+[32m+[m[32m    hashtag: "#OLYMPIABETIS",[m[41m[m
+   },[m
+   // Jornada 17[m
+   {[m
+[31m-    imgURL: "public/img/escudos/caceres.png",[m
+[31m-    date: "Jan 19, 2025 17:00:00",[m
+[31m-    shortDate: "19/01/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/union_viera.png",[m[41m[m
+[32m+[m[32m    date: "Feb 08, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "08/02/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "1-1",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIACACERES",[m
+[32m+[m[32m    hashtag: "#OLYMPIAVIERA",[m[41m[m
+   },[m
+   // Jornada 18[m
+   {[m
+[31m-    imgURL: "public/img/escudos/guiniguada.png",[m
+[31m-    date: "Feb 02, 2025 17:00:00",[m
+[31m-    shortDate: "02/02/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/granada.png",[m[41m[m
+[32m+[m[32m    date: "Feb 15, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "15/02/26",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "5-2",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAGUINIGUADA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAGRANADA",[m[41m[m
+   },[m
+   // Jornada 19[m
+   {[m
+[31m-    imgURL: "public/img/escudos/valencia.png",[m
+[31m-    date: "Feb 08, 2025 16:00:00",[m
+[31m-    shortDate: "08/02/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/getafe.png",[m[41m[m
+[32m+[m[32m    date: "Feb 22, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "22/02/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "0-2",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAVALENCIA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAGETAFE",[m[41m[m
+   },[m
+   // Jornada 20[m
+   {[m
+[31m-    imgURL: "public/img/escudos/la_destila.png",[m
+[31m-    date: "Feb 16, 2025 17:00:00",[m
+[31m-    shortDate: "16/02/25",[m
+[31m-    isLocal: true,[m
+[31m-    result: "3-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[31m-    liveURL: "",[m
+[31m-    hashtag: "#OLYMPIALADESTILA",[m
+[31m-  },[m
+[31m-  // Jornada 21[m
+[31m-  {[m
+[31m-    imgURL: "public/img/escudos/madrid_cf.png",[m
+[31m-    date: "Feb 23, 2025 17:00:00",[m
+[31m-    shortDate: "23/02/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/malaga.png",[m[41m[m
+[32m+[m[32m    date: "Mar 08, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "08/03/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "1-0",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAMADRIDCF",[m
+[32m+[m[32m    hashtag: "#OLYMPIAMALAGA",[m[41m[m
+   },[m
+[31m-  // Jornada 22[m
+[32m+[m[32m  // Jornada 21[m[41m[m
+   {[m
+[31m-    imgURL: "public/img/escudos/costa_adeje.png",[m
+[31m-    date: "Mar 02, 2025 17:00:00",[m
+[31m-    shortDate: "02/03/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/sporting_huelva.png",[m[41m[m
+[32m+[m[32m    date: "Mar 15, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "15/03/26",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "1-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[31m-    liveURL: "",[m
+[31m-    hashtag: "#OLYMPIACOSTAADEJE",[m
+[31m-  },[m
+[31m-  // Jornada 23[m
+[31m-  {[m
+[31m-    imgURL: "public/img/escudos/femarguin.png",[m
+[31m-    date: "Mar 09, 2025 17:00:00",[m
+[31m-    shortDate: "09/03/25",[m
+[31m-    isLocal: false,[m
+[31m-    result: "1-2",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAFEMARGUIN",[m
+[31m-  },[m
+[31m-  // Jornada 24[m
+[31m-  {[m
+[31m-    imgURL: "public/img/escudos/cordoba.png",[m
+[31m-    date: "Mar 16, 2025 17:00:00",[m
+[31m-    shortDate: "16/03/25",[m
+[31m-    isLocal: true,[m
+[31m-    result: "1-0",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[31m-    liveURL: "",[m
+[31m-    hashtag: "#OLYMPIACORDOBA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAHUELVA",[m[41m[m
+   },[m
+[31m-  // Jornada 25[m
+[32m+[m[32m  // Jornada 22[m[41m[m
+   {[m
+[31m-    imgURL: "public/img/escudos/malaga.png",[m
+[31m-    date: "Mar 23, 2025 17:00:00",[m
+[31m-    shortDate: "23/03/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/sport_extremadura.png",[m[41m[m
+[32m+[m[32m    date: "Mar 22, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "22/03/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "1-0",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAMALAGA",[m
+[32m+[m[32m    hashtag: "#OLYMPIAEXTREMADURA",[m[41m[m
+   },[m
+[31m-  // Jornada 26[m
+[32m+[m[32m  // Jornada 23[m[41m[m
+   {[m
+[31m-    imgURL: "public/img/escudos/levante.png",[m
+[31m-    date: "Mar 30, 2025 17:00:00",[m
+[31m-    shortDate: "30/03/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/pozuelo.png",[m[41m[m
+[32m+[m[32m    date: "Mar 29, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "29/03/26",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "2-1",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIALEVANTE",[m
+[32m+[m[32m    hashtag: "#OLYMPIAPOZUELO",[m[41m[m
+   },[m
+[31m-  // Jornada 27[m
+[32m+[m[32m  // Jornada 24[m[41m[m
+   {[m
+[31m-    imgURL: "public/img/escudos/real_union_tenerife.png",[m
+[31m-    date: "Apr 13, 2025 17:00:00",[m
+[31m-    shortDate: "13/04/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/cacereno.png",[m[41m[m
+[32m+[m[32m    date: "Apr 12, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "12/04/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "1-0",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIARUTENERIFE",[m
+[31m-  },[m
+[31m-  // Jornada 28[m
+[31m-  {[m
+[31m-    imgURL: "public/img/escudos/pozuelo.png",[m
+[31m-    date: "Apr 20, 2025 17:00:00",[m
+[31m-    shortDate: "20/04/25",[m
+[31m-    isLocal: true,[m
+[31m-    result: "2-3",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[31m-    liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAPOZUELO",[m
+[32m+[m[32m    hashtag: "#OLYMPIACACERENO",[m[41m[m
+   },[m
+[31m-  // Jornada 29[m
+[32m+[m[32m  // Jornada 25[m[41m[m
+   {[m
+[31m-    imgURL: "public/img/escudos/juan_grande.png",[m
+[31m-    date: "Apr 27, 2025 17:00:00",[m
+[31m-    shortDate: "27/04/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/femarguin.png",[m[41m[m
+[32m+[m[32m    date: "Apr 19, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "19/04/26",[m[41m[m
+     isLocal: true,[m
+[31m-    result: "1-1",[m
+[31m-    mapsURL: "https://goo.gl/maps/exjzXaRCWYzKmyfTA",[m
+[32m+[m[32m    result: "-",[m[41m[m
+[32m+[m[32m    mapsURL: "",[m[41m[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAJUANGRANDE",[m
+[32m+[m[32m    hashtag: "#OLYMPIAFEMARGUIN",[m[41m[m
+   },[m
+[31m-  // Jornada 30[m
+[32m+[m[32m  // Jornada 26[m[41m[m
+   {[m
+[31m-    imgURL: "public/img/escudos/elche.png",[m
+[31m-    date: "May 04, 2025 17:00:00",[m
+[31m-    shortDate: "04/05/25",[m
+[32m+[m[32m    imgURL: "public/img/escudos/guiniguada.png",[m[41m[m
+[32m+[m[32m    date: "Apr 26, 2026 00:00:00",[m[41m[m
+[32m+[m[32m    shortDate: "26/04/26",[m[41m[m
+     isLocal: false,[m
+[31m-    result: "4-1",[m
+[32m+[m[32m    result: "-",[m[41m[m
+     mapsURL: "",[m
+     liveURL: "",[m
+[31m-    hashtag: "#OLYMPIAELCHE",[m
+[31m-  },[m
+[32m+[m[32m    hashtag: "#OLYMPIAGUINIGUADA",[m[41m[m
+[32m+[m[32m  }[m[41m[m
+ ];[m
+ [m
+ export default SEASON_SENIOR_A;[m
+[1mdiff --git a/public/img/escudos/granada.png b/public/img/escudos/granada.png[m
+[1mindex 4fd9527..680e618 100755[m
+Binary files a/public/img/escudos/granada.png and b/public/img/escudos/granada.png differ
+[1mdiff --git a/public/img/escudos/guiniguada.png b/public/img/escudos/guiniguada.png[m
+[1mindex 4aaf608..3f1deef 100644[m
+Binary files a/public/img/escudos/guiniguada.png and b/public/img/escudos/guiniguada.png differ
+[1mdiff --git a/public/img/escudos/malaga.png b/public/img/escudos/malaga.png[m
+[1mindex 4bba8ba..f48ab72 100644[m
+Binary files a/public/img/escudos/malaga.png and b/public/img/escudos/malaga.png differ
