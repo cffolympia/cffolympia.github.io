@@ -60,7 +60,7 @@ let SEASON_SENIOR_A = [
     date: "Oct 01, 2025 20:00:00",
     shortDate: "01/10/25",
     isLocal: true,
-    result: "-",
+    result: "2-4",
     mapsURL: "",
     liveURL: "",
     hashtag: "#COPADELAREINA",
