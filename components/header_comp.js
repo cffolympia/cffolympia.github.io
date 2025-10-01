@@ -157,7 +157,6 @@ nav {
     <a href="/index.html"><h1>CFF OLYMPIA</h1></a>
   </div>
   <ul class="nav__right">
-    <li class="nav__element"><a class="nav__link" target="_blank" style="text-decoration: none; color: var(--gold);" href="https://www.standup-international.com/es/es/training/landing?utm_source=instagram&utm_medium=social_influencer&utm_content=oap_brde_branding_video_cv&utm_campaign=oap_brde_branding_standup_ifcom&utm_term=OlympiaCF">STAND UP</a></li>
     <!--<li class="nav__element"><a class="nav__link" href="/pages/renueva.html" style="text-decoration: underline; font-weight: 700">¡RENUEVA!</a></li> -->
     <li class="nav__element"><a class="nav__link" href="/pages/inscribete.html">INSCRÍBETE</a></li>
     <li class="nav__element"><a class="nav__link" target="_blank" href="https://estrellasporlaigualdad.cffolympia.es">ESTRELLAS</a></li>

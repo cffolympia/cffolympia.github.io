@@ -146,18 +146,20 @@ sponsorMarqueeTemplate.innerHTML = `
 <section class="sponsors__marquee">
 <div class="sponsors__frame">
     <div class="sponsors__track">
+    
         <a href="https://www.ruesma.com/" class="sponsors__link">
             <img
             src="/public/sponsors/logo_ruesma.png"
             class="sponsor"
             alt="Ruesma, patrocinador oficial del Olympia" />
         </a>
-        <a href="https://www.standup-international.com/es/es/" class="sponsors__link">
+        <a href="https://puremind.es/" class="sponsors__link">
             <img
-            src="/public/sponsors/logo_standup.png"
+            src="/public/sponsors/puremind.webp"
             class="sponsor"
-            alt="Stand UP, patrocinador oficial del Olympia" />
+            alt="PureMind, patrocinador oficial del Olympia" />
         </a>
+       
         <a href="https://www.mahou.es/" class="sponsors__link">
             <img
             src="/public/sponsors/logo_mahou.png"
@@ -202,17 +204,18 @@ sponsorMarqueeTemplate.innerHTML = `
         </a>
     </div>
     <div aria-hidden="true" class="sponsors__track">
+
         <a href="https://www.ruesma.com/" class="sponsors__link">
             <img
             src="/public/sponsors/logo_ruesma.png"
             class="sponsor"
             alt="Ruesma, patrocinador oficial del Olympia" />
         </a>
-        <a href="https://www.standup-international.com/es/es/" class="sponsors__link">
+        <a href="https://puremind.es/" class="sponsors__link">
             <img
-            src="/public/sponsors/logo_standup.png"
+            src="/public/sponsors/puremind.webp"
             class="sponsor"
-            alt="Stand UP, patrocinador oficial del Olympia" />
+            alt="PureMind, patrocinador oficial del Olympia" />
         </a>
         <a href="https://www.mahou.es/" class="sponsors__link">
             <img

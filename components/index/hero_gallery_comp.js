@@ -1,7 +1,7 @@
 const heroGalleryTemplate = document.createElement("template");
 
 //////////////////////////////////////
-const numberOfSlides = 2;
+const numberOfSlides = 1;
 //////////////////////////////////////
 
 heroGalleryTemplate.innerHTML = `
@@ -121,7 +121,6 @@ heroGalleryTemplate.innerHTML = `
   <div class="hero__gallery">
     <div class="hero__slider">
       <senior-a_match-slide class="match-slide"></senior-a_match-slide>
-      <stand_up-slide class="match-slide"></stand_up-slide>
       
       <!--<senior-a_match-slide2 class="match-slide"></senior-a_match-slide2>-->
     </div>
