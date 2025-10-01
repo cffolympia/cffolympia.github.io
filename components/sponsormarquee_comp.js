@@ -159,6 +159,12 @@ sponsorMarqueeTemplate.innerHTML = `
             class="sponsor"
             alt="PureMind, patrocinador oficial del Olympia" />
         </a>
+         <a href="https://www.lg.com/es/?srsltid=AfmBOoobHxIfQEP6PNdoy1cGMTklG0jv1JqM3DhECF7oU9aeig3GV_y8" class="sponsors__link">
+            <img
+            src="/public/sponsors/logo_lg.png"
+            class="sponsor"
+            alt="LG, patrocinador oficial del Olympia" />
+        </a>
        
         <a href="https://www.mahou.es/" class="sponsors__link">
             <img
@@ -166,12 +172,7 @@ sponsorMarqueeTemplate.innerHTML = `
             class="sponsor"
             alt="Mahou, patrocinador oficial del Olympia" />
         </a>
-        <a href="https://www.hyundai.es/concesionarios/motorgamboa" class="sponsors__link">
-            <img
-            src="/public/sponsors/logo_hyundaigamboa.png"
-            class="sponsor"
-            alt="Hyundai motor gamboa, patrocinador oficial del Olympia" />
-        </a>
+
         <a href="https://lraingenieria.es/" class="sponsors__link">
             <img
             src="/public/sponsors/logo_lra.png"
@@ -217,18 +218,19 @@ sponsorMarqueeTemplate.innerHTML = `
             class="sponsor"
             alt="PureMind, patrocinador oficial del Olympia" />
         </a>
+        <a href="https://www.lg.com/es/?srsltid=AfmBOoobHxIfQEP6PNdoy1cGMTklG0jv1JqM3DhECF7oU9aeig3GV_y8" class="sponsors__link">
+            <img
+            src="/public/sponsors/logo_lg.png"
+            class="sponsor"
+            alt="LG, patrocinador oficial del Olympia" />
+        </a>
         <a href="https://www.mahou.es/" class="sponsors__link">
             <img
             src="/public/sponsors/logo_mahou.png"
             class="sponsor"
             alt="Mahou, patrocinador oficial del Olympia" />
         </a>
-        <a href="https://www.hyundai.es/concesionarios/motorgamboa" class="sponsors__link">
-            <img
-            src="/public/sponsors/logo_hyundaigamboa.png"
-            class="sponsor"
-            alt="Hyundai motor gamboa, patrocinador oficial del Olympia" />
-        </a>
+
         <a href="https://lraingenieria.es/" class="sponsors__link">
             <img
             src="/public/sponsors/logo_lra.png"

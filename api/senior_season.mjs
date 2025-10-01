@@ -19,7 +19,7 @@ let SEASON_SENIOR_A = [
     result: "5-3",
     mapsURL: "",
     liveURL: "",
-    hashtag: "#OLYMPIAGETAFE",
+    hashtag: "#COPADELAREINA",
   },
   // Jornada 2
   {
@@ -63,7 +63,7 @@ let SEASON_SENIOR_A = [
     result: "-",
     mapsURL: "",
     liveURL: "",
-    hashtag: "#OLYMPIAOSASUNA",
+    hashtag: "#COPADELAREINA",
   },
   // Jornada 5
   {

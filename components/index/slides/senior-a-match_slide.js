@@ -11,6 +11,11 @@ let isLocal = MATCHDATA.senior_a.isLocal;
 
 const seniorAMatchSlide = document.createElement("template");
 
+// Determinar la imagen de fondo basado en el hashtag
+const backgroundImage = hashtag === "#COPADELAREINA" 
+    ? 'url("/public/img/hero_slides/copa-reina.jpg")'
+  : 'url("/public/img/hero_slides/slide_senior_a.jpg")';
+    
 seniorAMatchSlide.innerHTML = `
 <style>
   *,
@@ -21,8 +26,7 @@ seniorAMatchSlide.innerHTML = `
       padding: 0;
   }
   .gallery__slide {
-    background-image: linear-gradient(270deg, #00000050, #00000090), url("/public/img/hero_slides/slide_senior_a.jpg");
-    background-repeat: no-repeat;
+    background-image: linear-gradient(270deg, #00000050, #00000090), ${backgroundImage};    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     flex-basis: 100%;
