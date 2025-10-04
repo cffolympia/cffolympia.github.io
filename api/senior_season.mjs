@@ -71,7 +71,7 @@ let SEASON_SENIOR_A = [
     date: "Oct 04, 2025 16:00:00",
     shortDate: "04/10/25",
     isLocal: true,
-    result: "-",
+    result: "5-0",
     mapsURL: "",
     liveURL: "",
     hashtag: "#OLYMPIAJUANGRANDE",
