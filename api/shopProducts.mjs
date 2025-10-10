@@ -1,11 +1,66 @@
 let SHOP_PRODUCTS = [
 
+//        {
+//    name: "(NUEVO) CAMISETA ANIVERSARIO",
+//    price: "26,00 EUR - Diseño delante y detrás",
+//    imgURL: "/public/img/shop/camisetas_aniversario_front.png",
+//    hoverImgURL: "/public/img/shop/camisetas_aniversario_front.png",
+//        productImages: [
+//       "/public/img/shop/camisetas_aniversario_front.png",
+//    ],
+//    pageName: "camiseta_aniversario",
+//        pageURL: "/pages/producto_tienda.html?producto=camiseta_aniversario",
+//    selections: [
+//      {
+//        name: "Talla",
+//        isRequired: true,
+//        options: ["Talla: XS", "Talla: S", "Talla: M", "Talla: L", "Talla XL"],
+//      },
+//      {
+//        name: "Color",
+//        isRequired: true,
+//        options: ["Color: Lavanda"],
+//      },
+//    ],
+//    otherInputs: [],
+//  },
+
+      {
+    name: "(NUEVO) CAMISETA COPA DE LA REINA",
+    price: "10,00 EUR - Diseño delante y detrás",
+    imgURL: "/public/img/shop/camiseta_copadelareina_front.png",
+    hoverImgURL: "/public/img/shop/camiseta_copadelareina_back.png",
+        productImages: [
+       "/public/img/shop/camiseta_copadelareina_front.png",
+       "/public/img/shop/camiseta_copadelareina_back.png",
+    ],
+    pageName: "camiseta_reina",
+        pageURL: "/pages/producto_tienda.html?producto=camiseta_reina",
+    selections: [
+      {
+        name: "Talla",
+        isRequired: true,
+        options: ["Talla: XS", "Talla: S", "Talla: M", "Talla: L", "Talla XL"],
+      },
+      {
+        name: "Color",
+        isRequired: true,
+        options: ["Color: Lavanda"],
+      },
+    ],
+    otherInputs: [],
+  },
+
   {
     name: "(NUEVO) SUDADERA PASEO",
     price: "28,00 EUR - Diseño delante y detrás",
     imgURL: "/public/img/shop/sudadera_paseo_back.png",
     hoverImgURL: "/public/img/shop/sudadera_2015_front.png",
-    productImages: [],
+    productImages: [
+      "/public/img/shop/sudadera_paseo_back.png",
+      "/public/img/shop/sudadera_2015_front.png",
+
+    ],
     pageName: "sudadera_paseo",
     pageURL: "/pages/producto_tienda.html?producto=sudadera_paseo",
     selections: [
@@ -28,7 +83,7 @@ let SHOP_PRODUCTS = [
     price: "15,00 EUR - Sólo diseño delante",
     imgURL: "/public/img/shop/sudadera_2015_front.png",
     hoverImgURL: "/public/img/shop/sudadera_2015_front.png",
-    productImages: [],
+    productImages: [ "/public/img/shop/sudadera_2015_front.png",],
     pageName: "sudadera_2015",
     pageURL: "/pages/producto_tienda.html?producto=sudadera_2015",
     selections: [
@@ -51,7 +106,7 @@ let SHOP_PRODUCTS = [
     price: "8,00 EUR - Sólo diseño delante",
     imgURL: "/public/img/shop/camiseta_2015_front.png",
     hoverImgURL: "/public/img/shop/camiseta_2015_front.png",
-    productImages: [],
+    productImages: ["/public/img/shop/camiseta_2015_front.png"],
     pageName: "camiseta_2015",
     pageURL: "/pages/producto_tienda.html?producto=camiseta_2015",
     selections: [
@@ -68,13 +123,15 @@ let SHOP_PRODUCTS = [
     ],
     otherInputs: [],
   },
+
+
   //////////////////////////////////////////////////////////////////////////////////////////
   {
     name: "(NUEVO) CHANCLAS OLYMPIA",
     price: "15,00 EUR",
     imgURL: "/public/img/shop/chanclas.png",
     hoverImgURL: "/public/img/shop/chanclas.png",
-    productImages: [],
+    productImages: ["/public/img/shop/chanclas.png"],
     pageName: "chanclas",
     pageURL: "/pages/producto_tienda.html?producto=chanclas",
     selections: [
@@ -92,7 +149,7 @@ let SHOP_PRODUCTS = [
     price: "12,00 EUR",
     imgURL: "/public/img/shop/riñonera.png",
     hoverImgURL: "/public/img/shop/riñonera.png",
-    productImages: [],
+    productImages: ["/public/img/shop/riñonera.png"],
     pageName: "riñonera",
     pageURL: "/pages/producto_tienda.html?producto=riñonera",
     selections: [],
@@ -116,7 +173,7 @@ let SHOP_PRODUCTS = [
     price: "150,00 EUR",
     imgURL: "/public/img/shop/camiseta_azul_front.png",
     hoverImgURL: "/public/img/shop/camiseta_azul_front.png",
-    productImages: [],
+    productImages: ["/public/img/shop/camiseta_azul_front.png"],
     pageName: "-",
     pageURL:
       "https://www.futbolemotion.com/es/comprar/pack/futbol/olympia-jugadoras-cantera",
@@ -130,10 +187,8 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/camiseta_mint_front.png",
     hoverImgURL: "/public/img/shop/camiseta_mint_front.png",
     productImages: [
-      // "/public/img/noticias/noticia_3.JPG",
-      // "/public/img/noticias/noticia_3.JPG",
-      // "/public/img/noticias/noticia_3.JPG",
-      // "/public/img/noticias/noticia_3.JPG",
+       "/public/img/shop/camiseta_mint_front.png"
+
     ],
     pageName: "pack_segunda_equipacion",
     pageURL: "/pages/producto_tienda.html?producto=pack_segunda_equipacion",
@@ -228,18 +283,19 @@ let SHOP_PRODUCTS = [
     ],
   },
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  {
-    name: "PACK EQIPACIONES PORTERA",
-    price: "185,00 EUR",
-    imgURL: "/public/img/shop/camiseta_amarilla_front.png",
-    hoverImgURL: "/public/img/shop/camiseta_amarilla_front.png",
-    productImages: [],
-    pageName: "-",
-    pageURL:
-      "https://www.futbolemotion.com/es/comprar/pack/futbol/olympia-porteras-cantera",
-    selections: [],
-    otherInputs: [],
-  },
+//  {
+//    name: "PACK EQIPACIONES PORTERA",
+//    price: "185,00 EUR",
+//    imgURL: "/public/img/shop/camiseta_amarilla_front.png",
+//    hoverImgURL: "/public/img/shop/camiseta_amarilla_front.png",
+//    productImages: [],
+//    pageName: "-",
+//    pageURL:
+//      "https://www.futbolemotion.com/es/comprar/pack/futbol/olympia-porteras-cantera",
+//    selections: [],
+//    otherInputs: [],
+//  },
+  
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // {
   //   name: "PACK SEGUNDA EQUIPACIÓN PORTERA",
@@ -254,70 +310,71 @@ let SHOP_PRODUCTS = [
   //   otherInputs: [],
   // },
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  {
-    name: "EQUIPACIÓN DE ENTRENAMIENTO",
-    price: "ESCUDO BLANCO - LRA",
-    imgURL: "/public/img/shop/camiseta_entrenamiento_front.png",
-    hoverImgURL: "/public/img/shop/camiseta_entrenamiento_front.png",
-    productImages: [
+//  {
+//    name: "EQUIPACIÓN DE ENTRENAMIENTO",
+//    price: "ESCUDO BLANCO - LRA",
+//    imgURL: "/public/img/shop/camiseta_entrenamiento_front.png",
+//    hoverImgURL: "/public/img/shop/camiseta_entrenamiento_front.png",
+//    productImages: [
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
-    ],
-    pageName: "pack_equipacion_entrenamiento",
-    pageURL: "/pages/producto_tienda.html?producto=pack_equipacion_entrenamiento",
-    selections: [
-      {
-        name: "Talla Camiseta",
-        isRequired: true,
-        options: [
-          "Escoge talla camiseta (15 €)",
-          "No Comprar Camiseta",
-          "Talla Camiseta: 7-8 años",
-          "Talla Camiseta: 8-9 años",
-          "Talla Camiseta: 9-10 años",
-          "Talla Camiseta: 10-11 años",
-          "Talla Camiseta: 11-12 años",
-          "Talla Camiseta: 12-13 años",
-          "Talla Camiseta: 13-14 años",
-          "Talla Camiseta: 14-15 años",
-          "Talla Camiseta: 15-16 años",
-          "Talla Camiseta: XS",
-          "Talla Camiseta: S",
-          "Talla Camiseta: M",
-          "Talla Camiseta: L",
-          "Talla Camiseta: XL",
-          "Talla Camiseta: 2XL",
-          "Talla Camiseta: 3XL",
-          "No Comprar Camiseta"
-        ],
-      },
-      {
-        name: "Talla Pantalón",
-        isRequired: true,
-        options: [
-          "Escoge talla pantalón (12€)",
-          "No Comprar Pantalón",
-          "Talla Pantalón: 7-8 años",
-          "Talla Pantalón: 8-9 años",
-          "Talla Pantalón: 9-10 años",
-          "Talla Pantalón: 10-11 años",
-          "Talla Pantalón: 11-12 años",
-          "Talla Pantalón: 12-13 años",
-          "Talla Pantalón: 13-14 años",
-          "Talla Pantalón: 14-15 años",
-          "Talla Pantalón: 15-16 años",
-          "Talla Pantalón: XS",
-          "Talla Pantalón: S",
-          "Talla Pantalón: M",
-          "Talla Pantalón: L",
-          "Talla Pantalón: XL",
-          "Talla Pantalón: 2XL",
-          "Talla Pantalón: 3XL",
-          "No Comprar Pantalón"
-        ],
-      },
+//    ],
+//    pageName: "pack_equipacion_entrenamiento",
+//    pageURL: "/pages/producto_tienda.html?producto=pack_equipacion_entrenamiento",
+//    selections: [
+//      {
+//        name: "Talla Camiseta",
+//        isRequired: true,
+//
+//         options: [
+//           "Escoge talla camiseta (15 €)",
+//           "No Comprar Camiseta",
+//           "Talla Camiseta: 7-8 años",
+//           "Talla Camiseta: 8-9 años",
+//          "Talla Camiseta: 9-10 años",
+//           "Talla Camiseta: 10-11 años",
+//           "Talla Camiseta: 11-12 años",
+//           "Talla Camiseta: 12-13 años",
+//           "Talla Camiseta: 13-14 años",
+//           "Talla Camiseta: 14-15 años",
+//           "Talla Camiseta: 15-16 años",
+//           "Talla Camiseta: XS",
+//           "Talla Camiseta: S",
+//           "Talla Camiseta: M",
+//           "Talla Camiseta: L",
+//          "Talla Camiseta: XL",
+//          "Talla Camiseta: 2XL",
+//          "Talla Camiseta: 3XL",
+//          "No Comprar Camiseta"
+//        ],
+//      },
+//      {
+//        name: "Talla Pantalón",
+//        isRequired: true,
+//        options: [
+//          "Escoge talla pantalón (12€)",
+//          "No Comprar Pantalón",
+//          "Talla Pantalón: 7-8 años",
+//          "Talla Pantalón: 8-9 años",
+//          "Talla Pantalón: 9-10 años",
+//          "Talla Pantalón: 10-11 años",
+//          "Talla Pantalón: 11-12 años",
+//          "Talla Pantalón: 12-13 años",
+//          "Talla Pantalón: 13-14 años",
+//          "Talla Pantalón: 14-15 años",
+//          "Talla Pantalón: 15-16 años",
+//          "Talla Pantalón: XS",
+//          "Talla Pantalón: S",
+//          "Talla Pantalón: M",
+//          "Talla Pantalón: L",
+//          "Talla Pantalón: XL",
+//          "Talla Pantalón: 2XL",
+//          "Talla Pantalón: 3XL",
+//          "No Comprar Pantalón"
+//        ],
+//      },
       // {
       //   name: "Talla Sudadera",
       //   isRequired: true,
@@ -342,24 +399,25 @@ let SHOP_PRODUCTS = [
       //     "No Comprar Sudadera"
       //   ],
       // },
-    ],
-    otherInputs: [
-      {
-        type: "hidden",
-        name: "_cc",
-        placeholder: "",
-        value: "info@artycosl.com",
-        isRequired: false,
-      },
-    ],
-  },
+//    ],
+//    otherInputs: [
+//      {
+//        type: "hidden",
+//        name: "_cc",
+//        placeholder: "",
+//        value: "info@artycosl.com",
+//        isRequired: false,
+//      },
+//    ],
+//  },
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     name: "SUDADERA MINT OLYMPIA",
-    price: "<p style='color: #bb3030'>DISPONIBLE A PARTIR DE OCTUBRE (28€)</p>",
+    price: "28,00 EUR",
     imgURL: "/public/img/shop/sudadera_mint_front.png",
     hoverImgURL: "/public/img/shop/sudadera_mint_front.png",
     productImages: [
+      "/public/img/shop/sudadera_mint_front.png"
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -408,6 +466,7 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/abrigo_front.png",
     hoverImgURL: "/public/img/shop/abrigo_front.png",
     productImages: [
+      "/public/img/shop/abrigo_front.png",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -439,6 +498,7 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/abrigo_front.png",
     hoverImgURL: "/public/img/shop/abrigo_front.png",
     productImages: [
+      "/public/img/shop/abrigo_front.png"
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -469,7 +529,9 @@ let SHOP_PRODUCTS = [
     price: "47,00 EUR",
     imgURL: "/public/img/shop/chubasquero_front.png",
     hoverImgURL: "/public/img/shop/chubasquero_back.png",
-    productImages: [],
+    productImages: ["/public/img/shop/chubasquero_front.png",
+      "/public/img/shop/chubasquero_back.png"
+    ],
     pageName: "-",
     pageURL:
       "https://www.futbolemotion.com/es/comprar/chubasquero/adidas/entrada-22-olympia-las-rozas-team-navy-blue",
@@ -483,6 +545,7 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/hoodie_front.png",
     hoverImgURL: "/public/img/shop/hoodie_front.png",
     productImages: [
+      "/public/img/shop/hoodie_front.png"
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -514,6 +577,7 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/bufanda_front.png",
     hoverImgURL: "/public/img/shop/bufanda_front.png",
     productImages: [
+      "/public/img/shop/bufanda_front.png"
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -531,6 +595,7 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/camiseta_basica_front.png",
     hoverImgURL: "/public/img/shop/camiseta_basica_front.png",
     productImages: [
+      "/public/img/shop/camiseta_basica_front.png"
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -559,6 +624,8 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/llavero_front.png",
     hoverImgURL: "/public/img/shop/llavero_back.png",
     productImages: [
+      "/public/img/shop/llavero_front.png",
+      "/public/img/shop/llavero_back.png",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_3.JPG",
@@ -617,6 +684,7 @@ let SHOP_PRODUCTS = [
     imgURL: "/public/img/shop/cintas_front.png",
     hoverImgURL: "/public/img/shop/cintas_front.png",
     productImages: [
+      "/public/img/shop/cintas_front.png"
       // "/public/img/noticias/noticia_3.JPG",
       // "/public/img/noticias/noticia_11.JPG",
       // "/public/img/noticias/noticia_13.JPG",
