@@ -1,5 +1,34 @@
 let SHOP_PRODUCTS = [
+      {
+    name: "(NUEVO) CAMISETA 10º ANIVERSARIO",
+    price: "10,00 EUR - 21,00 EUR LAS TRES",
+    imgURL: "/public/img/shop/camiseta_aniversario_granate_front.png",
+    hoverImgURL: "/public/img/shop/camiseta_aniversario_granate_back.png",
+        productImages: [
+       "/public/img/shop/camiseta_aniversario_granate_front.png",
+        "/public/img/shop/camiseta_aniversario_granate_back.png",
+        "/public/img/shop/camiseta_aniversario_azuloscuro_front.png",
+        "/public/img/shop/camiseta_aniversario_azuloscuro_back.png",
+        "/public/img/shop/camiseta_aniversario_azulceleste_front.png",
+        "/public/img/shop/camiseta_aniversario_azulceleste_back.png",
 
+    ],
+    pageName: "camiseta_reina",
+        pageURL: "/pages/producto_tienda.html?producto=camiseta_reina",
+    selections: [
+      {
+        name: "Talla",
+        isRequired: true,
+        options: ["Talla: XS", "Talla: S", "Talla: M", "Talla: L", "Talla XL"],
+      },
+      {
+        name: "Color",
+        isRequired: true,
+        options: ["Color: Granate","Color: Azul Oscuro","Color: Azul celeste"],
+      },
+    ],
+    otherInputs: [],
+  },
 
 
   {
