@@ -79,7 +79,7 @@ let SEASON_SENIOR_A = [
   // Jornada 6
   {
     imgURL: "public/img/escudos/betis.png",
-    date: "Oct 12, 2025 16:00:00",
+    date: "Oct 11, 2025 16:00:00",
     shortDate: "11/10/25",
     isLocal: false,
     result: "-",
