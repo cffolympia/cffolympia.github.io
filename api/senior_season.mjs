@@ -80,7 +80,7 @@ let SEASON_SENIOR_A = [
   {
     imgURL: "public/img/escudos/betis.png",
     date: "Oct 12, 2025 16:00:00",
-    shortDate: "12/10/25",
+    shortDate: "11/10/25",
     isLocal: false,
     result: "-",
     mapsURL: "https://maps.app.goo.gl/mVdrt3KPEZkLWEEw7",
