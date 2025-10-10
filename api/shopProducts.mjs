@@ -1,5 +1,45 @@
 let SHOP_PRODUCTS = [
 
+
+
+  {
+    name: "(NUEVO) SUDADERA OLYMPIA 2 COLORES",
+    price: "21,50 EUR",
+    imgURL: "/public/img/shop/hoodie_front_black.png",
+    hoverImgURL: "/public/img/shop/hoodie_front_white.png",
+    productImages: [
+      "/public/img/shop/hoodie_front_black.png",
+      "/public/img/shop/hoodie_front_white.png"
+      // "/public/img/noticias/noticia_3.JPG",
+      // "/public/img/noticias/noticia_3.JPG",
+      // "/public/img/noticias/noticia_3.JPG",
+      // "/public/img/noticias/noticia_3.JPG",
+    ],
+    pageName: "sudadera_blanca",
+    pageURL: "/pages/producto_tienda.html?producto=sudadera_blanca",
+    selections: [
+      {
+        name: "Talla",
+        isRequired: true,
+        options: ["Talla: XS", "Talla: S", "Talla: M", "Talla: L"],
+      },
+            {
+        name: "Color",
+        isRequired: true,
+        options: ["Color: Negro", "Color: Blanco"],
+      },
+    ],
+    otherInputs: [
+      {
+        type: "hidden",
+        name: "_cc",
+        placeholder: "",
+        value: "info@artycosl.com",
+        isRequired: false,
+      },
+    ],
+  },
+
 //        {
 //    name: "(NUEVO) CAMISETA ANIVERSARIO",
 //    price: "26,00 EUR - Diseño delante y detrás",
@@ -539,37 +579,7 @@ let SHOP_PRODUCTS = [
     otherInputs: [],
   },
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  {
-    name: "SUDADERA BLANCA OLYMPIA",
-    price: "21,50 EUR",
-    imgURL: "/public/img/shop/hoodie_front.png",
-    hoverImgURL: "/public/img/shop/hoodie_front.png",
-    productImages: [
-      "/public/img/shop/hoodie_front.png"
-      // "/public/img/noticias/noticia_3.JPG",
-      // "/public/img/noticias/noticia_3.JPG",
-      // "/public/img/noticias/noticia_3.JPG",
-      // "/public/img/noticias/noticia_3.JPG",
-    ],
-    pageName: "sudadera_blanca",
-    pageURL: "/pages/producto_tienda.html?producto=sudadera_blanca",
-    selections: [
-      {
-        name: "Talla",
-        isRequired: true,
-        options: ["Talla: XS", "Talla: S", "Talla: M", "Talla: L"],
-      },
-    ],
-    otherInputs: [
-      {
-        type: "hidden",
-        name: "_cc",
-        placeholder: "",
-        value: "info@artycosl.com",
-        isRequired: false,
-      },
-    ],
-  },
+
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     name: "BUFANDA OLYMPIA",
