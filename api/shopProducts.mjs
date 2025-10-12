@@ -13,8 +13,8 @@ let SHOP_PRODUCTS = [
         "/public/img/shop/camiseta_aniversario_azulceleste_back.png",
 
     ],
-    pageName: "camiseta_reina",
-        pageURL: "/pages/producto_tienda.html?producto=camiseta_reina",
+    pageName: "camiseta_aniversario",
+        pageURL: "/pages/producto_tienda.html?producto=camiseta_aniversario",
     selections: [
       {
         name: "Talla",
