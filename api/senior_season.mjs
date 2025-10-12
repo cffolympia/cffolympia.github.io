@@ -82,7 +82,7 @@ let SEASON_SENIOR_A = [
     date: "Oct 11, 2025 16:00:00",
     shortDate: "11/10/25",
     isLocal: false,
-    result: "-",
+    result: "2-1",
     mapsURL: "https://maps.app.goo.gl/mVdrt3KPEZkLWEEw7",
     liveURL: "",
     hashtag: "#OLYMPIABETIS",
