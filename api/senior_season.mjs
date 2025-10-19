@@ -93,7 +93,7 @@ let SEASON_SENIOR_A = [
     date: "Oct 19, 2025 17:00:00",
     shortDate: "19/10/25",
     isLocal: true,
-    result: "-",
+    result: "1-0",
     mapsURL: "https://maps.app.goo.gl/d2WLLm51F5Qv8iQJA",
     liveURL: "",
     hashtag: "#OLYMPIAGETAFE",
@@ -101,7 +101,7 @@ let SEASON_SENIOR_A = [
   // Jornada 8
   {
     imgURL: "public/img/escudos/granada.png",
-    date: "Nov 02, 2025 00:00:00",
+    date: "Nov 02, 2025 13:30:00",
     shortDate: "02/11/25",
     isLocal: false,
     result: "-",
@@ -306,7 +306,7 @@ let SEASON_SENIOR_A = [
     mapsURL: "https://maps.app.goo.gl/RHeKBiLuskCaBj3F9",
     liveURL: "",
     hashtag: "#OLYMPIAGUINIGUADA",
-  }
+  },
 ];
 
 export default SEASON_SENIOR_A;
