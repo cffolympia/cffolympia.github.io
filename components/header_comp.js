@@ -164,6 +164,7 @@ nav {
     <!--<li class="nav__element"><a class="nav__link" href="/pages/equipos.html">EQUIPOS</a></li>-->
     <li class="nav__element"><a class="nav__link" href="/pages/noticias.html?grupo=1">NOTICIAS</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/tienda.html">TIENDA</a></li>
+    <li class="nav__element"><a class="nav__link" href="/pages/patrocinadores.html">PATROCINADORES</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/contacto.html">CONTACTO</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/info.html">INFO</a></li>
   </ul>
