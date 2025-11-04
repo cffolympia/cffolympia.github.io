@@ -104,7 +104,7 @@ let SEASON_SENIOR_A = [
     date: "Nov 02, 2025 13:30:00",
     shortDate: "02/11/25",
     isLocal: false,
-    result: "-",
+    result: "2-1",
     mapsURL: "https://maps.app.goo.gl/2utQYFPpDFEWxUcm8",
     liveURL: "",
     hashtag: "#OLYMPIAGRANADA",
@@ -112,7 +112,7 @@ let SEASON_SENIOR_A = [
   // Jornada 9
   {
     imgURL: "public/img/escudos/cacereno.png",
-    date: "Nov 09, 2025 00:00:00",
+    date: "Nov 09, 2025 17:00:00",
     shortDate: "09/11/25",
     isLocal: true,
     result: "-",

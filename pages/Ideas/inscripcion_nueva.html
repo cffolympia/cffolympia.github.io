@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>CFF OLYMPIA ⚽ INSCRIPCIÓN</title>
+
+    <!-- ETIQUETAS META -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="google-site-verification"
+      content="eqHCBAW8FA5-Ks7_d2mXiWkN22gW1YbiXhQtBghdGqk"
+    />
+    <meta name="author" content="Club Deportivo Básico CFF Olympia Las Rozas" />
+    <meta
+      name="description"
+      content="Web oficial del Club Deportivo Básico Femenino CFF Olympia Las Rozas"
+    />
+    <meta
+      name="keywords"
+      content="Cff Olympia, Olympia, Fútbol Femenino, Cff Olympia Femenino, Cff Olympia Las Rozas, Las Rozas, Cff Olympia Las Rozas Femenino, Recinto Ferial Las Rozas, Fútbol Femenino en Las Rozas, Club de fútbol femenino, Fútbol femenino Madrid, Líderes en fútbol femenino en Las Rozas, Fútbol Femenino Base, Inscripción jugadoras, Inscríbete, Inscription"
+    />
+    <meta name="robots" content="index/follow" />
+    <meta name="googlebot" content="index/follow" />
+    <meta name="theme-color" content="#030722" />
+    <meta name="msapplication-navbutton-color" content="#fff" />
+    <link rel="icon" type="image/png" href="/public/favicon.png" />
+
+    <!-- LINKS -->
+    <link rel="base" href="http://www.cffolympia.es" />
+    <link rel="canonical" href="http://www.cffolympia.es" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Anton:400"
+    />
+    <link rel="stylesheet" href="/styles.css" type="text/css" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- COMPONENTS -->
+    <script
+      src="/components/header_comp.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
+
+  <!-- STRUCTURE -->
+  <body>
+    <header-component></header-component>
+    <main>
+      <style>
+        ::selection {
+          background-color: var(--mint);
+          color: var(--blue);
+        }
+        *,
+        ::before,
+        ::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        ::-webkit-scrollbar {
+          width: 0px;
+          height: 0px;
+        }
+
+        /* Enhanced Inscription Section */
+        .inscription {
+          position: relative;
+          width: 100%;
+          margin: 8rem 0 8rem;
+          padding: 0 2rem;
+          overflow: hidden;
+          background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.02) 100%
+          );
+        }
+
+        .inscription__form {
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(20px);
+          border-radius: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          padding: 4rem 5rem;
+          max-width: 95rem;
+          margin: 2rem auto 0;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .inscription__form::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 4px;
+          background: linear-gradient(90deg, var(--mint), transparent);
+        }
+
+        .form__title {
+          font-family: var(--title);
+          font-weight: 800;
+          font-size: 12rem;
+          color: var(--mint);
+          margin: 0.5rem 0 3rem;
+          padding: 0;
+          text-align: center;
+          background: linear-gradient(135deg, var(--white), var(--mint));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          letter-spacing: -0.02em;
+        }
+
+        .form__data {
+          margin: 0 0 4rem;
+          padding: 2.5rem;
+          background: rgba(255, 255, 255, 0.03);
+          border-radius: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form__text {
+          font-family: var(--text);
+          font-weight: 400;
+          font-size: 1.8rem;
+          line-height: 1.7;
+          color: rgba(255, 255, 255, 0.9);
+        }
+
+        .form__text a {
+          color: var(--mint);
+          text-decoration: underline;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .form__text a:hover {
+          color: var(--white);
+        }
+
+        .form__field {
+          margin: 0 0 4rem;
+          padding: 3rem;
+          background: rgba(255, 255, 255, 0.03);
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          transition: all 0.3s ease;
+        }
+
+        .form__field:hover {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(138, 243, 232, 0.2);
+        }
+
+        .form__div {
+          margin: 0 0 2.5rem;
+        }
+
+        .form__label {
+          width: 100%;
+          font-family: var(--text);
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 1.4;
+          color: var(--white);
+          margin-bottom: 0.8rem;
+          display: block;
+        }
+
+        .form__label--box {
+          margin: 0 2rem 0 0;
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        .form__label a {
+          color: var(--mint);
+          text-decoration: underline;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .form__label a:hover {
+          color: var(--white);
+        }
+
+        .form__input,
+        .form__select,
+        .form__textarea {
+          width: 100%;
+          margin: 0.5rem 0 1rem;
+          padding: 1.2rem 1.5rem;
+          font-family: var(--text);
+          font-weight: 400;
+          font-size: 1.6rem;
+          color: var(--white);
+          background: rgba(255, 255, 255, 0.08);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+          transition: all 0.3s ease;
+        }
+
+        .form__input:focus,
+        .form__select:focus,
+        .form__textarea:focus {
+          outline: none;
+          border-color: var(--mint);
+          background: rgba(255, 255, 255, 0.12);
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .form__input:hover,
+        .form__select:hover,
+        .form__textarea:hover {
+          border-color: rgba(138, 243, 232, 0.4);
+        }
+
+        .form__select {
+          height: auto;
+          padding: 1.2rem 1.5rem;
+        }
+
+        .form__select option {
+          background: var(--blue);
+          color: var(--white);
+          padding: 1rem;
+        }
+
+        .form__radio,
+        .form__check {
+          margin-right: 1rem;
+          transform: scale(1.2);
+          accent-color: var(--mint);
+        }
+
+        .form__textarea {
+          height: 12rem;
+          resize: vertical;
+          line-height: 1.5;
+        }
+
+        .form__list {
+          width: 100%;
+          margin: 1.5rem 0 2rem;
+          padding: 0 0 0 2rem;
+          font-family: var(--text);
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 1.7;
+          color: rgba(255, 255, 255, 0.9);
+          list-style: decimal;
+        }
+
+        .form__list li {
+          margin: 1.2rem 0 1.2rem 1rem;
+          padding-left: 0.5rem;
+        }
+
+        .form__list li a {
+          color: var(--mint);
+          text-decoration: underline;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .form__list li a:hover {
+          color: var(--white);
+        }
+
+        .form__table {
+          width: 100%;
+          margin: 2rem 0;
+          font-family: var(--text);
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          color: var(--white);
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
+          overflow: hidden;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form__table thead {
+          background: rgba(138, 243, 232, 0.1);
+          border-bottom: 1px solid rgba(138, 243, 232, 0.3);
+        }
+
+        .form__table th {
+          padding: 1.5rem;
+          text-align: left;
+          font-weight: 600;
+          color: var(--mint);
+        }
+
+        .form__table tr {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form__table tr:last-child {
+          border-bottom: none;
+        }
+
+        .form__table td {
+          padding: 1.2rem 1.5rem;
+        }
+
+        .form__submit {
+          margin: 3rem 0 0;
+          width: 100%;
+          background: linear-gradient(135deg, var(--mint), #8af3e8);
+          border-radius: 12px;
+          border: none;
+          position: relative;
+          font-family: var(--stitle);
+          font-weight: 600;
+          font-size: 2.5rem;
+          color: var(--blue);
+          padding: 1.5rem 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-decoration: none;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          cursor: pointer;
+          box-shadow: 0 8px 25px rgba(138, 243, 232, 0.3);
+          overflow: hidden;
+        }
+
+        .form__submit::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent
+          );
+          transition: left 0.6s ease;
+        }
+
+        .form__submit:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 35px rgba(138, 243, 232, 0.4);
+        }
+
+        .form__submit:hover::before {
+          left: 100%;
+        }
+
+        .form__submit:active {
+          transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1000px) {
+          .inscription {
+            margin: 8rem 0 4rem;
+          }
+          .inscription__form {
+            margin: 0 auto;
+            padding: 3rem 3rem;
+          }
+          .form__title {
+            font-size: 10rem;
+          }
+        }
+
+        @media (max-width: 800px) {
+          .form__text {
+            font-size: 1.6rem;
+            line-height: 1.6;
+          }
+          .form__label {
+            font-size: 1.4rem;
+          }
+          .form__input,
+          .form__select,
+          .form__textarea {
+            font-size: 1.4rem;
+            padding: 1rem 1.2rem;
+          }
+          .form__radio,
+          .form__check {
+            font-size: 1.4rem;
+          }
+          .form__list {
+            font-size: 1.4rem;
+          }
+          .form__table {
+            font-size: 1.4rem;
+          }
+          .form__submit {
+            font-size: 2rem;
+            padding: 1.2rem 0;
+          }
+        }
+
+        @media (max-width: 700px) {
+          .inscription__form {
+            padding: 2.5rem 2rem;
+          }
+          .form__title {
+            font-size: 8rem;
+          }
+          .form__field {
+            padding: 2rem;
+          }
+          .form__data {
+            padding: 2rem;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .form__title {
+            font-size: 6rem;
+          }
+          .form__text {
+            font-size: 1.4rem;
+          }
+          .form__label {
+            font-size: 1.3rem;
+          }
+          .form__input,
+          .form__select,
+          .form__textarea {
+            font-size: 1.3rem;
+          }
+          .form__list {
+            font-size: 1.3rem;
+          }
+          .form__table {
+            font-size: 1.3rem;
+          }
+          .form__submit {
+            font-size: 1.8rem;
+            padding: 1rem 0;
+          }
+        }
+
+        @media (max-width: 500px) {
+          .inscription {
+            padding: 0 1rem;
+          }
+          .inscription__form {
+            padding: 2rem 1.5rem;
+            border-radius: 16px;
+          }
+          .form__title {
+            font-size: 5rem;
+          }
+          .form__field {
+            padding: 1.5rem;
+            border-radius: 12px;
+          }
+          .form__data {
+            padding: 1.5rem;
+            border-radius: 10px;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .form__title {
+            font-size: 4rem;
+          }
+          .form__text {
+            font-size: 1.3rem;
+          }
+          .form__label {
+            font-size: 1.2rem;
+          }
+          .form__input,
+          .form__select,
+          .form__textarea {
+            font-size: 1.2rem;
+            padding: 0.8rem 1rem;
+          }
+          .form__list {
+            font-size: 1.2rem;
+          }
+          .form__table {
+            font-size: 1.2rem;
+          }
+          .form__submit {
+            font-size: 1.6rem;
+            padding: 0.8rem 0;
+          }
+        }
+
+        /* Animation for form elements */
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .form__field,
+        .form__data {
+          animation: fadeInUp 0.6s ease-out;
+        }
+
+        .form__field:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+        .form__field:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+        .form__field:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+        .form__field:nth-child(4) {
+          animation-delay: 0.4s;
+        }
+        .form__field:nth-child(5) {
+          animation-delay: 0.5s;
+        }
+        .form__field:nth-child(6) {
+          animation-delay: 0.6s;
+        }
+      </style>
+
+      <section class="inscription">
+        <form
+          action="https://formsubmit.co/info@cffolympia.es"
+          method="POST"
+          id="Form"
+          class="inscription__form"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Una jugadora quiere inscribirse al Olympia"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://cffolympia.es/pages/comfirmacion_envio.html"
+          />
+          <input
+            type="hidden"
+            name="_url"
+            value="https://www.cffolympia.es/pages/inscribete.html"
+          />
+          <input
+            type="hidden"
+            name="_cc"
+            value="tesoreria@cffolympia.es,ana.delachica@cffolympia.es"
+          />
+
+          <h2 class="form__title">INSCRIPCIÓN DE JUGADORAS</h2>
+
+          <div class="form__data">
+            <span class="form__text">
+              Llamenos antes de rellenar el formulario:
+              <a href="tel:626487563">626 48 75 63</a>. De lo contario, su
+              formulario no será validado. Para cualquier consulta en relación
+              con este formulario o con el proceso de inscripción, puedes
+              ponerte en contacto con nosotros en el teléfono
+              <a href="tel:626487563">626 48 75 63</a> o a través del mail
+              <a href="mailto:info@cffolympia.es">info@cffolympia.es</a>
+            </span>
+          </div>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <fieldset class="form__field">
+            <label for="Nombre" class="form__label">Nombre Completo</label>
+            <input
+              id="Nombre"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Nombre completo jugadora"
+              required
+            />
+
+            <label for="Nacimiento" class="form__label"
+              >Fecha de nacimiento</label
+            >
+            <input
+              id="Nacimiento"
+              class="form__input"
+              type="date"
+              placeholder="Escribe aquí"
+              name="Fecha de nacimiento jugadora"
+              required
+            />
+
+            <label for="Categoria" class="form__label">Categoría</label>
+            <select
+              id="Categoria"
+              name="Categoría jugadora"
+              class="form__select"
+              required
+            >
+              <option value="Olympeques (2019-2020)">
+                Olympeques (2020-2021)
+              </option>
+              <option value="Benjamín (2015-2016-2017-2018)">
+                Benjamín (2016-2017-2018-2019)
+              </option>
+              <option value="Alevín (2013-2014)">Alevín (2014-2015)</option>
+              <option value="Infantil (2011-2012)">
+                Infantil F7 y F11 (2012-2013)
+              </option>
+              <option value="Cadete F11 20 (2009-2010)">
+                Cadete F11 20 (2010-2011)
+              </option>
+              <option value="Juvenil F11 (2006-2007-2008)">
+                Juvenil F11 (2007-2008-2009)
+              </option>
+              <option value="Senior F11 (+18 años)">
+                Senior F11 (+18 años)
+              </option>
+              <option value="Veteranas (+30 años)">Veteranas (+30 años)</option>
+            </select>
+
+            <label for="Municipio" class="form__label"
+              >Municipio de Nacimiento</label
+            >
+            <input
+              id="Municipio"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Municipio de nacimiento jugadora"
+              required
+            />
+
+            <label for="Empadronada" class="form__label">Empadronada en</label>
+            <input
+              id="Empadronada"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Empadronada en"
+              required
+            />
+
+            <label for="DNI" class="form__label"
+              >DNI Jugadora (mayores de 14)</label
+            >
+            <input
+              id="DNI"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="DNI jugadora"
+            />
+
+            <label for="Email" class="form__label"
+              >Email Jugadora (mayores de edad)</label
+            >
+            <input
+              id="Email"
+              class="form__input"
+              type="email"
+              placeholder="Escribe aquí"
+              name="Email jugadora"
+            />
+
+            <label for="Telefono" class="form__label"
+              >Teléfono Jugadora (mayores de edad)</label
+            >
+            <input
+              id="Telefono"
+              class="form__input"
+              type="number"
+              placeholder="Escribe aquí"
+              name="Teléfono jugadora"
+            />
+
+            <label for="TelFijo" class="form__label">Teléfono Fijo</label>
+            <input
+              id="TelFijo"
+              class="form__input"
+              type="number"
+              placeholder="Escribe aquí"
+              name="Teléfono fijo jugadora"
+            />
+
+            <label for="Domicilio" class="form__label">Domicilio</label>
+            <input
+              id="Domicilio"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Domicilio de la jugadora"
+              required
+            />
+
+            <label for="Poblacion" class="form__label">Población</label>
+            <input
+              id="Poblacion"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Población de la jugadora"
+              required
+            />
+
+            <label for="CodPostal" class="form__label">Código Postal</label>
+            <input
+              id="CodPostal"
+              class="form__input"
+              type="number"
+              placeholder="Escribe aquí"
+              name="Código postal jugadora"
+              required
+            />
+          </fieldset>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <fieldset class="form__field">
+            <div class="form__div">
+              <span class="form__label">¿Has jugado al fútbol antes?</span>
+            </div>
+
+            <div class="form__div">
+              <input
+                class="form__radio"
+                type="radio"
+                value="Sí"
+                id="si"
+                name="¿Ha jugado al futbol?"
+              />
+              <label class="form__label form__label--box" for="si">Sí</label>
+              <!-- <br /> -->
+              <input
+                class="form__radio"
+                type="radio"
+                value="No"
+                id="no"
+                name="¿Ha jugado al futbol?"
+              />
+              <label class="form__label form__label--box" for="no">No</label>
+            </div>
+
+            <label for="Experiencia" class="form__label">
+              En caso afirmativo, cuéntanos en qué equipos y cuál es tu posición
+            </label>
+            <textarea
+              id="Experiencia"
+              class="form__textarea"
+              name="Experiencia previa"
+            ></textarea>
+          </fieldset>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <fieldset class="form__field">
+            <label for="NombreMadreOTutor" class="form__label"
+              >Nombre Completo Madre/Tutor</label
+            >
+            <input
+              id="NombreMadreOTutor"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Nombre completo madre/tutor"
+              required
+            />
+
+            <label for="DNIMadreOTutor" class="form__label"
+              >DNI Madre/Tutor</label
+            >
+            <input
+              id="DNIMadreOTutor"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="DNI madre/tutor"
+              required
+            />
+
+            <label for="EmailMadreOTutor" class="form__label"
+              >Email Madre/Tutor</label
+            >
+            <input
+              id="EmailMadreOTutor"
+              class="form__input"
+              type="email"
+              placeholder="Escribe aquí"
+              name="Email madre/tutor"
+              required
+            />
+
+            <label for="TelefonoMadreOTutor" class="form__label"
+              >Teléfono Madre/Tutor</label
+            >
+            <input
+              id="TelefonoMadreOTutor"
+              class="form__input"
+              type="number"
+              placeholder="Escribe aquí"
+              name="Teléfono madre/tutor"
+              required
+            />
+
+            <label for="LugarNacimientoMadreOTutor" class="form__label">
+              Lugar Nacimiento Madre/Tutor
+            </label>
+            <input
+              id="LugarNacimientoMadreOTutor"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Lugar de nacimiento de la madre/tutor"
+              required
+            />
+
+            <label for="NombrePadre" class="form__label"
+              >Nombre Completo Padre</label
+            >
+            <input
+              id="NombrePadre"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Nombre completo padre"
+            />
+
+            <label for="DNIPadre" class="form__label">DNI Padre</label>
+            <input
+              id="DNIPadre"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="DNI padre"
+            />
+
+            <label for="EmailPadre" class="form__label">Email Padre</label>
+            <input
+              id="EmailPadre"
+              class="form__input"
+              type="email"
+              placeholder="Escribe aquí"
+              name="Email padre"
+            />
+
+            <label for="TelefonoPadre" class="form__label"
+              >Teléfono Padre</label
+            >
+            <input
+              id="TelefonoPadre"
+              class="form__input"
+              type="number"
+              placeholder="Escribe aquí"
+              name="Teléfono padre"
+            />
+
+            <label for="LugarNacimientoPadre" class="form__label">
+              Lugar Nacimiento Padre
+            </label>
+            <input
+              id="LugarNacimientoPadre"
+              class="form__input"
+              type="text"
+              placeholder="Escribe aquí"
+              name="Lugar de nacimiento del padre"
+            />
+          </fieldset>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <fieldset class="form__field">
+            <div class="form__div">
+              <input
+                class="form__radio"
+                type="radio"
+                value="Acepto las Normas y Requisitos del Club"
+                id="Normas"
+                name="¿Acepta las normas?"
+                required
+              />
+              <label class="form__label form__label--box" for="Normas">
+                Acepto las
+                <a
+                  href="/public/docs/Normas y Requistos del CFF Olympia.pdf"
+                  target="_blank"
+                >
+                  normas y requisitos del club.
+                </a>
+              </label>
+            </div>
+
+            <div class="form__div">
+              <input
+                class="form__radio"
+                type="radio"
+                value="Acepto la Política de Privacidad"
+                id="Polticas"
+                name="¿Acepta las políticas?"
+                required
+              />
+              <label class="form__label form__label--box" for="Politicas">
+                Acepto la
+                <a
+                  target="_blank"
+                  href="/public/docs/Política de privacidad CFF Olympia Las Rozas.pdf"
+                >
+                  política de privacidad.
+                </a>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <fieldset class="form__field">
+            <span class="form__text">
+              Si no nos permite utilizar estos datos es posible que no podamos
+              prestarle los servicios solicitados, pues tal información es
+              necesaria para que podamos desarrollar nuestra actividad de manera
+              coherente y efectiva.
+            </span>
+
+            <div class="form__div">
+              <input
+                class="form__check"
+                type="checkbox"
+                value="Consiento el uso de los datos relativos a mi salud o, es su caso, como tutores a la salud de mi hijo o menor a nuestro cargo para poder recibir los servicios solicitados."
+                id="Check1"
+                name="¿Consiente el uso de los datos relativos a la salud de su hijo o menor a cargo, o, en caso de ser mayor de edad, de mis datos de salud?"
+              />
+              <label class="form__label form__label--box" for="Check1">
+                Consiento el uso de los datos relativos a mi salud o, es su
+                caso, como tutores a la salud de mi hijo o menor a nuestro cargo
+                para poder recibir los servicios solicitados.
+              </label>
+            </div>
+
+            <div class="form__div">
+              <input
+                class="form__check"
+                type="checkbox"
+                value="Consiento que se utilice mi imagen o, en su caso, como tutores la imagen de nuestro hijo o menor a nuestro cargo para su publicación a través de las redes sociales con el fin de dar a conocer la entidad y difundir su actividad."
+                id="Check2"
+                name="¿Consiente el uso de la imagen de su hijo o menor a cargo en RRSS, o, en caso de ser mayor, de la suya?"
+              />
+              <label class="form__label form__label--box" for="Check2">
+                Consiento que se utilice mi imagen o, en su caso, como tutores
+                la imagen de nuestro hijo o menor a nuestro cargo para su
+                publicación a través de las redes sociales con el fin de dar a
+                conocer la entidad y difundir su actividad.
+              </label>
+            </div>
+
+            <div class="form__div">
+              <input
+                class="form__check"
+                type="checkbox"
+                value="Consiento la publicación de mi imagen o, en su caso, la imagen de nuestro hijo o menor a nuestro cargo en Internet y otros medios similares para difundir las actividades de su entidad."
+                id="Check3"
+                name="¿Consiente el uso de la imagen de su hijo o menor a cargo en Internet, o, en caso de ser mayor, de la suya?"
+              />
+              <label class="form__label form__label--box" for="Check3">
+                Consiento la publicación de mi imagen o, en su caso, la imagen
+                de nuestro hijo o menor a nuestro cargo en Internet y otros
+                medios similares para difundir las actividades de su entidad.
+              </label>
+            </div>
+
+            <div class="form__div">
+              <input
+                class="form__check"
+                type="checkbox"
+                value="Consiento el uso de mis datos personales para recibir publicidad del Olympia"
+                id="Check4"
+                name="¿Consiente el uso de sus datos personales para recibir publicidad del Olympia?"
+              />
+              <label class="form__label form__label--box" for="Check4">
+                Consiento el uso de mis datos personales para recibir publicidad
+                de su entidad.
+              </label>
+            </div>
+
+            <span class="form__text">
+              Podrá retirar cualquiera de estos consentimientos cuando lo
+              considere oportuno.
+            </span>
+          </fieldset>
+
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+          <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+          <div class="form__data">
+            <span class="form__text">
+              Para poder considerar la renovación es imprescindible:
+            </span>
+            <ol class="form__list">
+              <li>
+                Descargar el
+                <a
+                  target="_blank"
+                  href="/public/docs/orden_domiciliacion_cffolympia.pdf"
+                >
+                  formulario de domiciliación </a
+                >.
+              </li>
+              <li>
+                Descargar el
+                <a
+                  target="_blank"
+                  href="/public/docs/autorizacion_inscripcion_manor_cffolympia.pdf"
+                >
+                  formulario de Autorización para inscribir a un menor de edad.
+                </a>
+              </li>
+              <li>
+                Descargar el
+                <a
+                  target="_blank"
+                  href="/public/docs/anexo_proteccion_datos_cffolympia.pdf"
+                >
+                  Anexo de protección de datos.
+                </a>
+              </li>
+              <li>
+                Descargar la
+                <a
+                  target="_blank"
+                  href="/public/docs/carta_de_compromiso_cffolympia.pdf"
+                >
+                  Carta de compromiso.
+                </a>
+                (NO ENVIAR: Olympeques, Benjamín y Alevín)
+              </li>
+              <li>
+                Enviarlo debidamente cumplimentado a tesoreria@cffolympia.es,
+                poniendo en copia a info@cffolympia.es en el plazo máximo de 5
+                días.
+              </li>
+            </ol>
+          </div>
+
+          <div class="form__data">
+            <span class="form__text">
+              Al realizar la inscripción de jugadoras es necesario realizar el
+              pago de la inscripción federativa, por lo que en el momento en que
+              recibamos la solicitud procederemos a enviar un cargo al banco por
+              los siguientes conceptos:
+            </span>
+            <table class="form__table">
+              <thead style="text-align: left">
+                <tr>
+                  <th>MATRÍCULA (Pago único)</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>130€</td>
+                <!--  - Incluida la ficha federativa -->
+              </tr>
+              <!-- <tr>
+                <td>100€ - Para jugadoras no federadas</td>
+              </tr> -->
+            </table>
+          </div>
+
+          <div class="form__data">
+            <span class="form__text">
+              En la primera semana del mes de septiembre se pasará el primer mes
+              de cuota correspondiente al mes de septiembre.
+            </span>
+            <table class="form__table">
+              <thead style="text-align: left">
+                <tr>
+                  <th>CUOTAS TRIMESTRALES: OCT 2025, ENE Y ABRIL 2026</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>
+                  Olympeques, Benjamín, Alevín e Infantil - 204€ al trimestre
+                  (68€/mes)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Infantil F11, Cadete y Juvenil - 240€ al trimestre (80€/mes)
+                </td>
+              </tr>
+              <tr>
+                <td>Senior C - 165€ al trimestre (55€/mes)</td>
+              </tr>
+              <tr>
+                <td>Veteranas - 204€ al trimestre (68€/mes)</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="form__data">
+            <span class="form__text">
+              Una vez procesado, en caso de solicitar la baja/no incorporación
+              de la jugadora, ninguna de estas cantidades será devuelta.
+            </span>
+          </div>
+
+          <button class="form__submit" type="submit">
+            Enviar formulario de Inscripción
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
