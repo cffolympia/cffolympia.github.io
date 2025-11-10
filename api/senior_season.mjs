@@ -115,7 +115,7 @@ let SEASON_SENIOR_A = [
     date: "Nov 09, 2025 17:00:00",
     shortDate: "09/11/25",
     isLocal: true,
-    result: "-",
+    result: "0-2",
     mapsURL: "https://maps.app.goo.gl/d2WLLm51F5Qv8iQJA",
     liveURL: "",
     hashtag: "#OLYMPIACACERENO",
@@ -123,7 +123,7 @@ let SEASON_SENIOR_A = [
   // Jornada 10
   {
     imgURL: "public/img/escudos/pozuelo.png",
-    date: "Nov 16, 2025 00:00:00",
+    date: "Nov 16, 2025 16:00:00",
     shortDate: "16/11/25",
     isLocal: false,
     result: "-",
@@ -134,7 +134,7 @@ let SEASON_SENIOR_A = [
   // Jornada 11
   {
     imgURL: "public/img/escudos/guiniguada.png",
-    date: "Nov 23, 2025 00:00:00",
+    date: "Nov 23, 2025 11:15:00",
     shortDate: "23/11/25",
     isLocal: true,
     result: "-",
@@ -145,7 +145,7 @@ let SEASON_SENIOR_A = [
   // Jornada 12
   {
     imgURL: "public/img/escudos/femarguin.png",
-    date: "Dec 07, 2025 00:00:00",
+    date: "Dec 07, 2025 11:45:00",
     shortDate: "07/12/25",
     isLocal: false,
     result: "-",
@@ -156,7 +156,7 @@ let SEASON_SENIOR_A = [
   // Jornada 13
   {
     imgURL: "public/img/escudos/sport_extremadura.png",
-    date: "Dec 14, 2025 00:00:00",
+    date: "Dec 14, 2025 17:00:00",
     shortDate: "14/12/25",
     isLocal: true,
     result: "-",
