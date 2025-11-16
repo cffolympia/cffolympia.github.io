@@ -126,7 +126,7 @@ let SEASON_SENIOR_A = [
     date: "Nov 16, 2025 16:00:00",
     shortDate: "16/11/25",
     isLocal: false,
-    result: "-",
+    result: "0-2",
     mapsURL: "https://maps.app.goo.gl/qF4zEC1GF2JULEAGA",
     liveURL: "",
     hashtag: "#OLYMPIAPOZUELO",
