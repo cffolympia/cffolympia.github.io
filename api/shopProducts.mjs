@@ -214,6 +214,26 @@ let SHOP_PRODUCTS = [
 
   {
     name: "(NUEVO) PACK SEGUNDA EQUIPACIÓN",
+    price: "220,00 EUR",
+    imgURL: "/public/img/shop/camiseta_primera_equipacion_aliberico.png",
+    hoverImgURL: "/public/img/shop/camiseta_primera_equipacion_ruesma.png",
+
+    productImages: [
+      "/public/img/shop/camiseta_primera_equipacion.png",
+      "/public/img/shop/camiseta_primera_equipacion_aliberico.png",
+      "/public/img/shop/camiseta_primera_equipacion_ruesma.png",
+      "/public/img/shop/pantalon_primera_equipacion.png",
+      "/public/img/shop/medias_primera_equipacion.png",
+    ],
+    pageName: "-",
+    pageURL:
+      "https://www.futbolemotion.com/es/comprar/pack/futbol/jugadoras-cantera-olympia-las-rozas",
+    selections: [],
+    otherInputs: [],
+  },
+
+  {
+    name: "(NUEVO) PACK SEGUNDA EQUIPACIÓN",
     price: "",
     imgURL: "/public/img/shop/camiseta_segunda_equipacion_aliberico.png",
     hoverImgURL: "/public/img/shop/camiseta_segunda_equipacion_ruesma.png",
