@@ -1,6 +1,30 @@
 let SHOP_PRODUCTS = [
   {
-    name: "(NUEVO) CAMISETA EQUIPACIÓN DORADA/GRIS",
+    name: "(NUEVO) CAMISETA ENTRENAMIENTO CANTERA SQUADRA 25",
+    price: "19,00 EUR",
+    imgURL: "/public/img/shop/camiseta_adidas_cantera.png",
+    hoverImgURL: "/public/img/shop/camiseta_adidas_cantera.png",
+    productImages: ["/public/img/shop/camiseta_adidas_cantera.png"],
+    pageName: "-",
+    pageURL:
+      "https://www.futbolemotion.com/es/comprar/camiseta/adidas/cantera-squadra-25-mujer-cff-olympia-las-rozas-team-navy-blue-white",
+    selections: [],
+    otherInputs: [],
+  },
+  {
+    name: "(NUEVO) CAMISETA ENTRENAMIENTO CANTERA SQUADRA 25",
+    price: "24,00 EUR",
+    imgURL: "/public/img/shop/camiseta_adidas_entrenamiento.png",
+    hoverImgURL: "/public/img/shop/camiseta_adidas_entrenamiento.png",
+    productImages: ["/public/img/shop/camiseta_adidas_entrenamiento.png"],
+    pageName: "-",
+    pageURL:
+      "https://www.futbolemotion.com/es/comprar/camiseta/adidas/tiro-24-cotton-cff-olympia-las-rozas-team-navy-blue-white",
+    selections: [],
+    otherInputs: [],
+  },
+  {
+    name: "(NUEVO) CAMISETA EQUIPACIÓN 10º ANIVERSARIO",
     price: "220,00 EUR",
     imgURL: "/public/img/shop/camiseta_equipacion_dorada_aliberico.png",
     hoverImgURL: "/public/img/shop/camiseta_equipacion_dorada_ruesma.png",
@@ -47,6 +71,19 @@ let SHOP_PRODUCTS = [
         ],
       },
     ],
+    otherInputs: [],
+  },
+
+  {
+    name: "(NUEVO) MOCHILA ADIDAS",
+    price: "32,00 EUR",
+    imgURL: "/public/img/shop/mochila_adidas_23.png",
+    hoverImgURL: "/public/img/shop/mochila_adidas_23.png",
+    productImages: [],
+    pageName: "-",
+    pageURL:
+      "https://www.futbolemotion.com/es/comprar/mochila/adidas/tiro-23-league-26.5-l-cff-olympia-las-rozas-team-navy-blue-black-white",
+    selections: [],
     otherInputs: [],
   },
 
