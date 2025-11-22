@@ -1,7 +1,7 @@
 let SHOP_PRODUCTS = [
   {
     name: "(NUEVO) CAMISETA EQUIPACIÓN DORADA/GRIS",
-    price: "15,00 EUR",
+    price: "220,00 EUR",
     imgURL: "/public/img/shop/camiseta_equipacion_dorada_aliberico.png",
     hoverImgURL: "/public/img/shop/camiseta_equipacion_dorada_ruesma.png",
     productImages: [
@@ -9,22 +9,13 @@ let SHOP_PRODUCTS = [
       "/public/img/shop/camiseta_equipacion_dorada_aliberico.png",
       "/public/img/shop/camiseta_equipacion_dorada_ruesma.png",
     ],
-    pageName: "camiseta_dorada",
-    pageURL: "/pages/producto_tienda.html?producto=camiseta_dorada",
-    selections: [
-      {
-        name: "Talla",
-        isRequired: true,
-        options: ["Talla: XS", "Talla: S", "Talla: M", "Talla: L", "Talla XL"],
-      },
-      {
-        name: "Color",
-        isRequired: true,
-        options: ["Color: Azul"],
-      },
-    ],
+    pageName: "-",
+    pageURL:
+      "https://www.futbolemotion.com/es/comprar/pack/futbol/jugadoras-cantera-olympia-las-rozas",
+    selections: [],
     otherInputs: [],
   },
+
   {
     name: "(NUEVO) CAMISETA 10º ANIVERSARIO",
     price: "10,00 EUR - 21,00 EUR LAS TRES",
