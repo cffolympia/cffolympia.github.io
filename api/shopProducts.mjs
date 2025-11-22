@@ -23,6 +23,19 @@ let SHOP_PRODUCTS = [
     selections: [],
     otherInputs: [],
   },
+
+  {
+    name: "(NUEVO) PANTALÇON CORTO ENTRENAMIENTO",
+    price: "17,00 EUR",
+    imgURL: "/public/img/shop/pantalon_corto_entrenamiento.png",
+    hoverImgURL: "/public/img/shop/pantalon_corto_entrenamiento.png",
+    productImages: ["/public/img/shop/pantalon_corto_entrenamiento.png"],
+    pageName: "-",
+    pageURL:
+      "https://www.futbolemotion.com/es/comprar/pantalon-corto/adidas/squadra-25-ii-mujer-cff-olympia-las-rozas-team-navy-blue-2-white",
+    selections: [],
+    otherInputs: [],
+  },
   {
     name: "(NUEVO) CAMISETA EQUIPACIÓN 10º ANIVERSARIO",
     price: "220,00 EUR",
