@@ -252,13 +252,16 @@ let SHOP_PRODUCTS = [
       },
     ],
   },
+
   {
     name: "(NUEVO) PACK SEGUNDA EQUIPACIÓN PORTERA",
-    price: "",
+    price: "220,00 EUR",
     imgURL:
       "/public/img/shop/camiseta_portera__segunda_equipacion_aliberico.png",
+
     hoverImgURL:
       "/public/img/shop/camiseta_portera__segunda_equipacion_ruesma.png",
+
     productImages: [
       "/public/img/shop/camiseta_portera__segunda_equipacion.png",
       "/public/img/shop/camiseta_portera__segunda_equipacion_aliberico.png",
@@ -266,98 +269,11 @@ let SHOP_PRODUCTS = [
       "/public/img/shop/pantalon_portera__segunda_equipacion.png",
       "/public/img/shop/medias_portera__segunda_equipacion.png",
     ],
-    pageName: "pack_segunda_equipacion_portera",
+    pageName: "-",
     pageURL:
-      "/pages/producto_tienda.html?producto=pack_segunda_equipacion_portera",
-    selections: [
-      {
-        name: "Talla Camiseta",
-        isRequired: true,
-        options: [
-          "Escoge talla camiseta (15 €)",
-          "No Comprar Camiseta",
-          "Talla Camiseta: 7-8 años",
-          "Talla Camiseta: 8-9 años",
-          "Talla Camiseta: 9-10 años",
-          "Talla Camiseta: 10-11 años",
-          "Talla Camiseta: 11-12 años",
-          "Talla Camiseta: 12-13 años",
-          "Talla Camiseta: 13-14 años",
-          "Talla Camiseta: 14-15 años",
-          "Talla Camiseta: 15-16 años",
-          "Talla Camiseta: XS",
-          "Talla Camiseta: S",
-          "Talla Camiseta: M",
-          "Talla Camiseta: L",
-          "Talla Camiseta: XL",
-          "Talla Camiseta: 2XL",
-          "Talla Camiseta: 3XL",
-          "No Comprar Camiseta",
-        ],
-      },
-      {
-        name: "Talla Pantalón",
-        isRequired: true,
-        options: [
-          "Escoge talla pantalón (12€)",
-          "No Comprar Pantalón",
-          "Talla Pantalón: 7-8 años",
-          "Talla Pantalón: 8-9 años",
-          "Talla Pantalón: 9-10 años",
-          "Talla Pantalón: 10-11 años",
-          "Talla Pantalón: 11-12 años",
-          "Talla Pantalón: 12-13 años",
-          "Talla Pantalón: 13-14 años",
-          "Talla Pantalón: 14-15 años",
-          "Talla Pantalón: 15-16 años",
-          "Talla Pantalón: XS",
-          "Talla Pantalón: S",
-          "Talla Pantalón: M",
-          "Talla Pantalón: L",
-          "Talla Pantalón: XL",
-          "Talla Pantalón: 2XL",
-          "Talla Pantalón: 3XL",
-          "No Comprar Pantalón",
-        ],
-      },
-      {
-        name: "Talla Medias",
-        isRequired: true,
-        options: [
-          "Escoge talla medias (8€)",
-          "No Comprar Medias",
-          "Talla Medias: 0 (31-33)",
-          "Talla Medias: 1 (34-36)",
-          "Talla Medias: 2 (37-39)",
-          "Talla Medias: 4 (43-45)",
-          "Talla Medias: 5 (46-49)",
-          "No Comprar Medias",
-        ],
-      },
-    ],
-    otherInputs: [
-      {
-        type: "text",
-        name: "Nombre camiseta",
-        placeholder: "Nombre camiseta",
-        value: "",
-        isRequired: true,
-      },
-      {
-        type: "number",
-        name: "Dorsal camiseta",
-        placeholder: "Dorsal camiseta",
-        value: "",
-        isRequired: true,
-      },
-      {
-        type: "hidden",
-        name: "_cc",
-        placeholder: "",
-        value: "info@artycosl.com",
-        isRequired: false,
-      },
-    ],
+      "https://www.futbolemotion.com/es/comprar/pack/futbol/porteras-cantera-olympia-las-rozas",
+    selections: [],
+    otherInputs: [],
   },
   {
     name: "(NUEVO) PACK PRIMERA EQIPACIÓN",
@@ -948,43 +864,43 @@ let SHOP_PRODUCTS = [
   //  ],
   //},
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  //{
-  //  name: "ABRIGO OLYMPIA ADULTO",
-  //  price: "61,00 EUR",
-  //  imgURL: "/public/img/shop/abrigo_front.png",
-  //  hoverImgURL: "/public/img/shop/abrigo_front.png",
-  //  productImages: [
-  //    "/public/img/shop/abrigo_front.png",
-  // "/public/img/noticias/noticia_3.JPG",
-  // "/public/img/noticias/noticia_3.JPG",
-  // "/public/img/noticias/noticia_3.JPG",
-  // "/public/img/noticias/noticia_3.JPG",
-  //  ],
-  //  pageName: "abrigo_adulto",
-  //  pageURL: "/pages/producto_tienda.html?producto=abrigo_adulto",
-  //  selections: [
-  //    {
-  //      name: "Talla",
-  //      isRequired: true,
-  //      options: [
-  //        "Talla: XS (61€)",
-  //        "Talla: S (61€)",
-  //        "Talla: M (61€)",
-  //       "Talla: L (61€)",
-  //        "Talla: 2XL (61€)",
-  //      ],
-  //    },
-  //  ],
-  //  otherInputs: [
-  //    {
-  //      type: "hidden",
-  //      name: "_cc",
-  //      placeholder: "",
-  //      value: "info@artycosl.com",
-  //      isRequired: false,
-  //    },
-  //  ],
-  //},
+  {
+    name: "ABRIGO OLYMPIA ADULTO",
+    price: "61,00 EUR",
+    imgURL: "/public/img/shop/abrigo_front.png",
+    hoverImgURL: "/public/img/shop/abrigo_front.png",
+    productImages: [
+      "/public/img/shop/abrigo_front.png",
+      "/public/img/noticias/noticia_3.JPG",
+      "/public/img/noticias/noticia_3.JPG",
+      "/public/img/noticias/noticia_3.JPG",
+      "/public/img/noticias/noticia_3.JPG",
+    ],
+    pageName: "abrigo_adulto",
+    pageURL: "/pages/producto_tienda.html?producto=abrigo_adulto",
+    selections: [
+      {
+        name: "Talla",
+        isRequired: true,
+        options: [
+          "Talla: XS (61€)",
+          "Talla: S (61€)",
+          "Talla: M (61€)",
+          "Talla: L (61€)",
+          "Talla: 2XL (61€)",
+        ],
+      },
+    ],
+    otherInputs: [
+      {
+        type: "hidden",
+        name: "_cc",
+        placeholder: "",
+        value: "info@artycosl.com",
+        isRequired: false,
+      },
+    ],
+  },
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     name: "CHUBASQUERO OLYMPIA",
