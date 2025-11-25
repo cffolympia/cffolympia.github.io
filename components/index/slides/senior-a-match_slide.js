@@ -12,10 +12,11 @@ let isLocal = MATCHDATA.senior_a.isLocal;
 const seniorAMatchSlide = document.createElement("template");
 
 // Determinar la imagen de fondo basado en el hashtag
-const backgroundImage = hashtag === "#COPADELAREINA" 
+const backgroundImage =
+  hashtag === "#COPADELAREINA"
     ? 'url("/public/img/hero_slides/copa-reina.jpg")'
-  : 'url("/public/img/hero_slides/slide_senior_a.jpg")';
-    
+    : 'url("/public/img/hero_slides/slide_senior_a.jpg")';
+
 seniorAMatchSlide.innerHTML = `
 <style>
   *,
@@ -92,7 +93,9 @@ seniorAMatchSlide.innerHTML = `
   .match__escudo1 {
     height: 100%;
     width: 100%;
-    background-image: url("${isLocal ? "public/img/escudos/olympia.png" : oponentImg}");
+    background-image: url("${
+      isLocal ? "public/img/escudos/olympia_navidad.png" : oponentImg
+    }");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -112,7 +115,9 @@ seniorAMatchSlide.innerHTML = `
   .match__escudo2 {
     height: 100%;
     width: 100%;
-    background-image: url("${!isLocal ? "public/img/escudos/olympia.png" : oponentImg}");
+    background-image: url("${
+      !isLocal ? "public/img/escudos/olympia_navidad.png" : oponentImg
+    }");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -582,12 +587,18 @@ class SeniorAMatchSlide extends HTMLElement {
       const days = Math.floor(timeSpan / day).toLocaleString(undefined, {
         minimumIntegerDigits: 2,
       });
-      const hours = Math.floor((timeSpan % day) / hour).toLocaleString(undefined, {
-        minimumIntegerDigits: 2,
-      });
-      const minutes = Math.floor((timeSpan % hour) / minute).toLocaleString(undefined, {
-        minimumIntegerDigits: 2,
-      });
+      const hours = Math.floor((timeSpan % day) / hour).toLocaleString(
+        undefined,
+        {
+          minimumIntegerDigits: 2,
+        }
+      );
+      const minutes = Math.floor((timeSpan % hour) / minute).toLocaleString(
+        undefined,
+        {
+          minimumIntegerDigits: 2,
+        }
+      );
       const seconds = Math.floor((timeSpan % minute) / second);
       const seconds2digits = seconds.toLocaleString(undefined, {
         minimumIntegerDigits: 2,

@@ -15,7 +15,8 @@ class Episode {
 let ep1 = new Episode({
   name: "01/ Claudia Hernando",
   imgURL: "public/img/video_covers/rffmplay.jpg",
-  episodeURL: "https://www.youtube.com/live/wAvZ9WMdwow?si=ZG2EGbuO3jlNlu6s&t=5936",
+  episodeURL:
+    "https://www.youtube.com/live/wAvZ9WMdwow?si=ZG2EGbuO3jlNlu6s&t=5936",
 });
 
 let ep2 = new Episode({
@@ -57,14 +58,18 @@ let ep7 = new Episode({
 let ep8 = new Episode({
   name: "08/ Arantxa de la Chica",
   imgURL: "public/img/video_covers/rffmplay.jpg",
-  episodeURL: "https://www.youtube.com/live/CCKxAC77Epw?si=hwyfAKU8Y9anO_A9&t=6799",
+  episodeURL:
+    "https://www.youtube.com/live/CCKxAC77Epw?si=hwyfAKU8Y9anO_A9&t=6799",
 });
 
+let ep9 = new Episode({
+  name: "09/ Claudia Hernando",
+  imgURL: "/public/img/video_covers/rffmplay.jpg",
+  videoURL: "https://www.rffmplay.es/videos/287538-programa-106",
+});
 
 //Solo se ponen los de cada año, una vez se termine la tempo, se espera al primero de la siguiente y se eliminan el resto.
-RFFM_EPISODES.push(
-  ep8, ep7, ep6, ep5, ep4, ep3, ep2, ep1
-);
+RFFM_EPISODES.push(ep9);
 
 export default RFFM_EPISODES;
 

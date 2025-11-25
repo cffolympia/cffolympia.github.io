@@ -367,7 +367,16 @@ let a49 = new Articulo({
   imgPosition: "center center",
 });
 
+let a50 = new Articulo({
+  title: "LUNES NOCHE - CLAUDIA HERNANDO",
+  imgLink: "/public/img/noticias/noticia_50.jpeg",
+  text: '<a href="https://www.rffmplay.es/videos/287538-programa-106">HAZ CLICK AQUI PARA ACCEDER!</a>',
+  date: "20/10/2025",
+  imgPosition: "center center",
+});
+
 NOTICIAS.push(
+  a50,
   a49,
   a48,
   a47,

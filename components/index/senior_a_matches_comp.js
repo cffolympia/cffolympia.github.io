@@ -17,7 +17,7 @@ for (let i = 0; i < SEASON_SENIOR_A.length; i++) {
     nextMatchArrIndex = i;
   } else if (!dateFound && i + 1 == SEASON_SENIOR_A.length) {
     nextMatch = new Date(SEASON_SENIOR_A[i].date);
-    nextMatchArrIndex = i-3;
+    nextMatchArrIndex = i - 3;
   }
 }
 
@@ -395,13 +395,12 @@ seniorAMatches.innerHTML = `
   <h2 class="season__title">PARTIDOS</h2>
   <div class="season__container">
     <!-- /////////// -->
-    ${
-      `<div class="season__match">
+    ${`<div class="season__match">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex - 3] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex - 3].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex - 3].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 3].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -412,8 +411,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex - 3] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex - 3].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex - 3].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 3].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -421,15 +420,13 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex - 3].shortDate
         }</span>
-      </div>`
-    }
-    ${
-      `<div class="season__match">
+      </div>`}
+    ${`<div class="season__match">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex - 2] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex - 2].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex - 2].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 2].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -440,8 +437,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex - 2] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex - 2].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex - 2].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 2].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -449,15 +446,13 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex - 2].shortDate
         }</span>
-      </div>`
-    }
-    ${
-      `<div class="season__match">
+      </div>`}
+    ${`<div class="season__match">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex - 1] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex - 1].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex - 1].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 1].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -468,8 +463,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex - 1] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex - 1].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex - 1].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 1].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -477,15 +472,13 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex - 1].shortDate
         }</span>
-      </div>`
-    }
-    ${
-      `<div class="season__match season__match--main">
+      </div>`}
+    ${`<div class="season__match season__match--main">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -496,8 +489,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -505,15 +498,13 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex].shortDate
         }</span>
-      </div>`
-    }
-    ${
-      `<div class="season__match">
+      </div>`}
+    ${`<div class="season__match">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex + 1] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex + 1].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex + 1].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 1].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -524,8 +515,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex + 1] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex + 1].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex + 1].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 1].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -533,15 +524,13 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex + 1].shortDate
         }</span>
-      </div>`
-    }
-    ${
-      `<div class="season__match">
+      </div>`}
+    ${`<div class="season__match">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex + 2] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex + 2].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex + 2].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 2].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -552,8 +541,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex + 2] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex + 2].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex + 2].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 2].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -561,15 +550,13 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex + 2].shortDate
         }</span>
-      </div>`
-    }
-    ${
-      `<div class="season__match">
+      </div>`}
+    ${`<div class="season__match">
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex + 3] == undefined
             ? " "
-            : SEASON_SENIOR_A[nextMatchArrIndex + 3].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : SEASON_SENIOR_A[nextMatchArrIndex + 3].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 3].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -580,8 +567,8 @@ seniorAMatches.innerHTML = `
         <img src="${
           SEASON_SENIOR_A[nextMatchArrIndex + 3] == undefined
             ? " "
-            : !SEASON_SENIOR_A[nextMatchArrIndex + 3].isLocal 
-            ? "public/img/escudos/olympia.png" 
+            : !SEASON_SENIOR_A[nextMatchArrIndex + 3].isLocal
+            ? "public/img/escudos/olympia_navidad.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 3].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -589,8 +576,7 @@ seniorAMatches.innerHTML = `
             ? ""
             : SEASON_SENIOR_A[nextMatchArrIndex + 3].shortDate
         }</span>
-      </div>`
-    }
+      </div>`}
     <!-- /////////// -->
   </div>
 </section>
@@ -604,7 +590,9 @@ class SeniorAMatches extends HTMLElement {
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(seniorAMatches.content);
-    const shadow = document.querySelector("senior-a_matches-component").shadowRoot;
+    const shadow = document.querySelector(
+      "senior-a_matches-component"
+    ).shadowRoot;
   }
 }
 

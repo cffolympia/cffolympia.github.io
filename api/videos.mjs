@@ -29,13 +29,15 @@ let v3 = new Video({
 let v4 = new Video({
   name: "Día del entrenador 22-23",
   imgURL: "public/img/video_covers/jornadaentrenador.jpg",
-  videoURL: "https://www.youtube.com/live/MGvU6Cxu--8?si=pPpPg3mKOBmYNKVW&t=7988",
+  videoURL:
+    "https://www.youtube.com/live/MGvU6Cxu--8?si=pPpPg3mKOBmYNKVW&t=7988",
 });
 
 let v5 = new Video({
   name: "¡Abriendo camino, cumpliendo sueños!",
   imgURL: "public/img/video_covers/telediario.jpg",
-  videoURL: "https://x.com/cff_olympia/status/1732156436514226562?s=46&t=FN9ri0Tbnwc3FJpmnM1Wpw",
+  videoURL:
+    "https://x.com/cff_olympia/status/1732156436514226562?s=46&t=FN9ri0Tbnwc3FJpmnM1Wpw",
 });
 
 let v6 = new Video({
@@ -56,7 +58,13 @@ let v8 = new Video({
   videoURL: "https://youtu.be/HZK2-hsCITE?si=R5T2h73MD5Q19rZ3",
 });
 
+let v9 = new Video({
+  name: "RFFM Programa 106",
+  imgURL: "/public/img/video_covers/rffmpodcast.png",
+  videoURL: "https://www.rffmplay.es/videos/287538-programa-106",
+});
+
 //Máximo 15-20 video para no petar la web, iremos quitando superando el umbral de los 15 yo creo
-VIDEOS.push(v8, v7, v6, v5, v4, v3, v2, v1);
+VIDEOS.push(v9, v8, v7, v6, v5, v4, v3, v2);
 
 export default VIDEOS;
