@@ -533,7 +533,9 @@ class Product extends HTMLElement {
     const shadow = document.querySelector("shop_product-component").shadowRoot;
 
     // PRODUCT EVALUATOR
-    const productoBuscado = new URLSearchParams(window.location.search).get("producto");
+    const productoBuscado = new URLSearchParams(window.location.search).get(
+      "producto"
+    );
     let productoACargar = "none";
     for (let i = 0; i < SHOP_PRODUCTS.length; i++) {
       if (productoBuscado == SHOP_PRODUCTS[i].pageName) {
@@ -582,21 +584,29 @@ class Product extends HTMLElement {
     }
 
     // Create carousel HTML
-    let carouselHTML = '';
-    let indicatorsHTML = '';
-    
+    let carouselHTML = "";
+    let indicatorsHTML = "";
+
     if (productImages.length > 0) {
       carouselHTML = `
         <div class="product__carousel">
           <div class="product__carousel-container">
             <div class="product__carousel-track">
-              ${productImages.map((image, index) => `
+              ${productImages
+                .map(
+                  (image, index) => `
                 <div class="product__carousel-slide">
-                  <img src="${image}" alt="Imagen del producto ${index + 1}" class="product__img" />
+                  <img src="${image}" alt="Imagen del producto ${
+                    index + 1
+                  }" class="product__img" />
                 </div>
-              `).join('')}
+              `
+                )
+                .join("")}
             </div>
-            ${productImages.length > 1 ? `
+            ${
+              productImages.length > 1
+                ? `
               <div class="product__carousel-controls">
                 <button class="carousel__btn prev-btn">
                   <svg viewBox="0 0 24 24">
@@ -609,15 +619,27 @@ class Product extends HTMLElement {
                   </svg>
                 </button>
               </div>
-            ` : ''}
+            `
+                : ""
+            }
           </div>
-          ${productImages.length > 1 ? `
+          ${
+            productImages.length > 1
+              ? `
             <div class="product__carousel-indicators">
-              ${productImages.map((_, index) => `
-                <button class="carousel__indicator ${index === 0 ? 'active' : ''}" data-index="${index}"></button>
-              `).join('')}
+              ${productImages
+                .map(
+                  (_, index) => `
+                <button class="carousel__indicator ${
+                  index === 0 ? "active" : ""
+                }" data-index="${index}"></button>
+              `
+                )
+                .join("")}
             </div>
-          ` : ''}
+          `
+              : ""
+          }
         </div>
       `;
     }
@@ -634,7 +656,7 @@ class Product extends HTMLElement {
           </div>
           <form
             class="product__form"
-            action="https://formsubmit.co/equipaciones@cffolympia.es"
+            action="https://formsubmit.co/obiezeh999@gmail.com"
             method="POST">
             <input type="hidden" name="_subject" value="Nuevo pedido de ${name}" />
             <input type="hidden" name="_next" value="https://cffolympia.es/confirmacion_envio.html">
@@ -661,7 +683,7 @@ class Product extends HTMLElement {
             <span class="form__text">
             Siempre revise que toda la información está correctamente escrita y rellene todos los campos necesarios. Escriba a <a href="mailto:equipaciones@cffolympia.es">equipaciones@cffolympia.es</a>.
             </span> 
-            <button class="form__submit" type="submit">REALIZAR PEDIDO</button>
+            <button class="C" type="submit">REALIZAR PEDIDO</button>
           </form>
         </div>
       </aside>
@@ -701,57 +723,57 @@ class Product extends HTMLElement {
   }
 
   initializeCarousel(shadow) {
-    const track = shadow.querySelector('.product__carousel-track');
-    const slides = shadow.querySelectorAll('.product__carousel-slide');
-    const prevBtn = shadow.querySelector('.prev-btn');
-    const nextBtn = shadow.querySelector('.next-btn');
-    const indicators = shadow.querySelectorAll('.carousel__indicator');
-    
+    const track = shadow.querySelector(".product__carousel-track");
+    const slides = shadow.querySelectorAll(".product__carousel-slide");
+    const prevBtn = shadow.querySelector(".prev-btn");
+    const nextBtn = shadow.querySelector(".next-btn");
+    const indicators = shadow.querySelectorAll(".carousel__indicator");
+
     const totalSlides = slides.length;
-    
+
     const updateCarousel = () => {
       track.style.transform = `translateX(-${this.currentSlide * 100}%)`;
-      
+
       // Update indicators
       indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === this.currentSlide);
+        indicator.classList.toggle("active", index === this.currentSlide);
       });
     };
-    
+
     const nextSlide = () => {
       this.currentSlide = (this.currentSlide + 1) % totalSlides;
       updateCarousel();
     };
-    
+
     const prevSlide = () => {
       this.currentSlide = (this.currentSlide - 1 + totalSlides) % totalSlides;
       updateCarousel();
     };
-    
+
     // Event listeners
-    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-    
+    if (nextBtn) nextBtn.addEventListener("click", nextSlide);
+    if (prevBtn) prevBtn.addEventListener("click", prevSlide);
+
     indicators.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
+      indicator.addEventListener("click", () => {
         this.currentSlide = index;
         updateCarousel();
       });
     });
-    
+
     // Auto-scroll every 5 seconds
     this.autoScrollInterval = setInterval(nextSlide, 5000);
-    
+
     // Pause auto-scroll on hover
-    const carousel = shadow.querySelector('.product__carousel');
-    carousel.addEventListener('mouseenter', () => {
+    const carousel = shadow.querySelector(".product__carousel");
+    carousel.addEventListener("mouseenter", () => {
       if (this.autoScrollInterval) {
         clearInterval(this.autoScrollInterval);
         this.autoScrollInterval = null;
       }
     });
-    
-    carousel.addEventListener('mouseleave', () => {
+
+    carousel.addEventListener("mouseleave", () => {
       if (!this.autoScrollInterval) {
         this.autoScrollInterval = setInterval(nextSlide, 5000);
       }
