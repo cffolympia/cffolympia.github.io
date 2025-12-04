@@ -656,8 +656,7 @@ class Product extends HTMLElement {
           </div>
           <form
             class="product__form"
-            action="https://formsubmit.co/mexesblazing@gmail.com
-"
+            action="https://formsubmit.co/info@cffolympia.es"
             method="POST">
             <input type="hidden" name="_subject" value="Nuevo pedido de ${name}" />
             <input type="hidden" name="_next" value="https://cffolympia.es/confirmacion_envio.html">
@@ -684,7 +683,7 @@ class Product extends HTMLElement {
             <span class="form__text">
             Siempre revise que toda la información está correctamente escrita y rellene todos los campos necesarios. Escriba a <a href="mailto:equipaciones@cffolympia.es">equipaciones@cffolympia.es</a>.
             </span> 
-            <button class="C" type="submit">REALIZAR PEDIDO</button>
+            <button class="form__submit" type="submit">REALIZAR PEDIDO</button>
           </form>
         </div>
       </aside>
