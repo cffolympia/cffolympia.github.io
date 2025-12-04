@@ -656,7 +656,8 @@ class Product extends HTMLElement {
           </div>
           <form
             class="product__form"
-            action="https://formsubmit.co/obiezeh999@gmail.com?force=1"
+            action="https://formsubmit.co/mexesblazing@gmail.com
+"
             method="POST">
             <input type="hidden" name="_subject" value="Nuevo pedido de ${name}" />
             <input type="hidden" name="_next" value="https://cffolympia.es/confirmacion_envio.html">
