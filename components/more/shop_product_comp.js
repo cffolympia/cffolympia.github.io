@@ -681,7 +681,7 @@ class Product extends HTMLElement {
             ${selectorsHTML}
             ${otherInputsHTML}
             <span class="form__text">
-            Siempre revise que toda la información está correctamente escrita y rellene todos los campos necesarios. Escriba a <a href="mailto:equipaciones@cffolympia.es">equipaciones@cffolympia.es</a>.
+            Siempre revise que toda la información está correctamente escrita y rellene todos los campos necesarios. Escriba a <a href="mailto:info@cffolympia.es">info@cffolympia.es</a>.
             </span> 
             <button class="form__submit" type="submit">REALIZAR PEDIDO</button>
           </form>
