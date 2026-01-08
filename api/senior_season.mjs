@@ -178,7 +178,7 @@ let SEASON_SENIOR_A = [
   // Jornada 15
   {
     imgURL: "public/img/escudos/cordoba.png",
-    date: "Jan 18, 2026 00:00:00",
+    date: "Jan 18, 2026 11:15:00",
     shortDate: "18/01/26",
     isLocal: true,
     result: "-",
