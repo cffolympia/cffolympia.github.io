@@ -167,7 +167,7 @@ let SEASON_SENIOR_A = [
   // Jornada 14
   {
     imgURL: "public/img/escudos/juan_grande.png",
-    date: "Jan 11, 2026 00:00:00",
+    date: "Jan 11, 2026 13:00:00",
     shortDate: "11/01/26",
     isLocal: false,
     result: "-",
