@@ -170,7 +170,7 @@ let SEASON_SENIOR_A = [
     date: "Jan 11, 2026 13:00:00",
     shortDate: "11/01/26",
     isLocal: false,
-    result: "-",
+    result: "1-2",
     mapsURL: "https://maps.app.goo.gl/bjUYGRdDf3hXQwnv8",
     liveURL: "",
     hashtag: "#OLYMPIAJUANGRANDE",
