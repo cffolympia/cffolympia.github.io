@@ -400,7 +400,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex - 3] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex - 3].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 3].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -412,7 +412,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex - 3] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex - 3].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 3].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -426,7 +426,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex - 2] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex - 2].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 2].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -438,7 +438,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex - 2] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex - 2].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 2].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -452,7 +452,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex - 1] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex - 1].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 1].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -464,7 +464,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex - 1] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex - 1].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex - 1].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -478,7 +478,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -490,7 +490,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -504,7 +504,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex + 1] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex + 1].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 1].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -516,7 +516,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex + 1] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex + 1].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 1].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -530,7 +530,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex + 2] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex + 2].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 2].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -542,7 +542,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex + 2] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex + 2].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 2].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
@@ -556,7 +556,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex + 3] == undefined
             ? " "
             : SEASON_SENIOR_A[nextMatchArrIndex + 3].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 3].imgURL
         }" class="match__escudo match__escudo--1" />
         <span class="match__result">${
@@ -568,7 +568,7 @@ seniorAMatches.innerHTML = `
           SEASON_SENIOR_A[nextMatchArrIndex + 3] == undefined
             ? " "
             : !SEASON_SENIOR_A[nextMatchArrIndex + 3].isLocal
-            ? "public/img/escudos/olympia_navidad.png"
+            ? "public/img/escudos/olympia.png"
             : SEASON_SENIOR_A[nextMatchArrIndex + 3].imgURL
         }" class="match__escudo match__escudo--2" />
         <span class="match__date">${
