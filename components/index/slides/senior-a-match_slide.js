@@ -94,7 +94,7 @@ seniorAMatchSlide.innerHTML = `
     height: 100%;
     width: 100%;
     background-image: url("${
-      isLocal ? "public/img/escudos/olympia_navidad.png" : oponentImg
+      isLocal ? "public/img/escudos/olympia.png" : oponentImg
     }");
     background-repeat: no-repeat;
     background-size: contain;
@@ -116,7 +116,7 @@ seniorAMatchSlide.innerHTML = `
     height: 100%;
     width: 100%;
     background-image: url("${
-      !isLocal ? "public/img/escudos/olympia_navidad.png" : oponentImg
+      !isLocal ? "public/img/escudos/olympia.png" : oponentImg
     }");
     background-repeat: no-repeat;
     background-size: contain;
