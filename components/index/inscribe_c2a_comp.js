@@ -362,7 +362,7 @@ inscribeC2ATemplate.innerHTML = `
     </div>
     <div class="inscribe__img-frame">
       <img
-        src="/public/img/general/olympia_composition.png"
+        src="/public/img/general/composicion_nueva.png"
         alt="Imagen del Olympia"
         class="inscribe__img" />
     </div>

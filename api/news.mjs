@@ -375,7 +375,15 @@ let a50 = new Articulo({
   imgPosition: "center center",
 });
 
+let a51 = new Articulo({
+  title: "LUNES NOCHE - SAMMY",
+  imgLink: "/public/img/noticias/noticia_51.jpeg",
+  date: "12/01/2026",
+  imgPosition: "center center",
+});
+
 NOTICIAS.push(
+  a51,
   a50,
   a49,
   a48,
