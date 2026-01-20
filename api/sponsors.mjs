@@ -4,7 +4,7 @@ const PATROCINADORES = [
   {
     id: 1,
     nombre: "Ruesma",
-    tipo: "Consultoría",
+    tipo: "Construcción",
     logo: "/public/sponsors/logo_ruesma.png",
     descripcion:
       "Consultoría especializada en transformación digital y estrategia empresarial.",
@@ -20,7 +20,7 @@ const PATROCINADORES = [
   {
     id: 2,
     nombre: "PureMind",
-    tipo: "Bienestar Mental",
+    tipo: "Bienestar Físico y Mental",
     logo: "/public/sponsors/puremind.webp",
     descripcion:
       "Plataforma de bienestar mental y apoyo psicológico para deportistas.",
@@ -142,7 +142,7 @@ const PATROCINADORES = [
   {
     id: 9,
     nombre: "Aliberico",
-    tipo: "Alimentación",
+    tipo: "Grupo metalúrgico",
     logo: "/public/sponsors/logo_aliberico.png",
     descripcion:
       "Productos ibéricos de la más alta calidad y tradición española.",
