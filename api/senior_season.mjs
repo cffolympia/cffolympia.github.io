@@ -181,7 +181,7 @@ let SEASON_SENIOR_A = [
     date: "Jan 18, 2026 11:15:00",
     shortDate: "18/01/26",
     isLocal: true,
-    result: "-",
+    result: "2-0",
     mapsURL: "https://maps.app.goo.gl/d2WLLm51F5Qv8iQJA",
     liveURL: "",
     hashtag: "#OLYMPIACORDOBA",

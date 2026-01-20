@@ -32,7 +32,7 @@ const PATROCINADORES = [
       tieneDescuento: true,
       porcentaje: "20%",
       codigo: "OLYMPIA20",
-      descripcion: "20% de descuento en suscripciones",
+      descripcion: "de descuento en suscripciones",
     },
   },
   {
