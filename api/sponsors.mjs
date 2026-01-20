@@ -4,10 +4,10 @@ const PATROCINADORES = [
   {
     id: 1,
     nombre: "Ruesma",
-    tipo: "Construcción",
+    tipo: "Empresa constructora",
     logo: "/public/sponsors/logo_ruesma.png",
     descripcion:
-      "Consultoría especializada en transformación digital y estrategia empresarial.",
+      "Construcciones Ruesma es una empresa constructora nacional con más de 28 años de experiencia, especializada en obras de alta calidad, innovación y eficiencia.",
     redes: {
       web: "https://www.ruesma.com/",
       instagram: "https://www.instagram.com/construccionesruesma/",
@@ -145,7 +145,7 @@ const PATROCINADORES = [
     tipo: "Grupo metalúrgico",
     logo: "/public/sponsors/logo_aliberico.png",
     descripcion:
-      "Productos ibéricos de la más alta calidad y tradición española.",
+      "Grupo industrial familiar español que fabrica productos semitransformados de aluminio y los exporta a todo el mundo.",
     redes: {
       web: "http://aliberico.com/",
       twitter: "https://twitter.com/GrupoAliberico",
