@@ -203,6 +203,12 @@ sponsorMarqueeTemplate.innerHTML = `
             class="sponsor"
             alt="Aliberico, patrocinador oficial del Olympia" />
         </a>
+         <a href="https://ceodental-lasrozas.com/" class="sponsors__link">
+            <img
+            src="/public/sponsors/logo_ceodental.png"
+            class="sponsor"
+            alt="Ceo Dental, patrocinador oficial del Olympia" />
+        </a>
     </div>
     <div aria-hidden="true" class="sponsors__track">
 
@@ -260,6 +266,12 @@ sponsorMarqueeTemplate.innerHTML = `
             src="/public/sponsors/logo_aliberico.png"
             class="sponsor"
             alt="Aliberico, patrocinador oficial del Olympia" />
+        </a>
+        <a href="https://ceodental-lasrozas.com/" class="sponsors__link">
+            <img
+            src="/public/sponsors/logo_ceodental.png"
+            class="sponsor"
+            alt="Ceo Dental, patrocinador oficial del Olympia" />
         </a>
     </div>
 </div>

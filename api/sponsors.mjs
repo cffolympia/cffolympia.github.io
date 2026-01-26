@@ -3,6 +3,24 @@
 const PATROCINADORES = [
   {
     id: 1,
+    nombre: "Ceo Dental",
+    tipo: "Odontología",
+    logo: "/public/sponsors/logo_ceodental.png",
+    descripcion:
+      "Clínica dental en Las Rozas de Madrid centrada en la salud y estética dental, con un enfoque personalizado y tecnología odontológica avanzada.",
+
+    redes: {
+      web: "https://ceodental-lasrozas.com/",
+      facebook: "https://www.facebook.com/ceodental.lasrozas/",
+      instagram: "https://www.instagram.com/ceodentallasrozas/?hl=es",
+    },
+    descuento: {
+      tieneDescuento: false,
+      descripcion: "Patrocinador Oficial",
+    },
+  },
+  {
+    id: 2,
     nombre: "Ruesma",
     tipo: "Empresa constructora",
     logo: "/public/sponsors/logo_ruesma.png",
@@ -18,7 +36,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 2,
+    id: 3,
     nombre: "PureMind",
     tipo: "Bienestar Físico y Mental",
     logo: "/public/sponsors/puremind.webp",
@@ -36,7 +54,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 3,
+    id: 4,
     nombre: "LG",
     tipo: "Tecnología",
     logo: "/public/sponsors/logo_lg.png",
@@ -54,7 +72,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 4,
+    id: 5,
     nombre: "Mahou",
     tipo: "Cervecera",
     logo: "/public/sponsors/logo_mahou.png",
@@ -72,7 +90,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 5,
+    id: 6,
     nombre: "LRA Ingeniería",
     tipo: "Ingeniería",
     logo: "/public/sponsors/logo_lra.png",
@@ -88,7 +106,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 6,
+    id: 7,
     nombre: "Appletree Communications",
     tipo: "Comunicación",
     logo: "/public/sponsors/logo_appletree.png",
@@ -105,7 +123,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 7,
+    id: 8,
     nombre: "IE SEK",
     tipo: "Educación",
     logo: "/public/sponsors/logo_sek.png",
@@ -123,7 +141,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 8,
+    id: 9,
     nombre: "Vercocinas",
     tipo: "Diseño de Cocinas",
     logo: "/public/sponsors/logo_vercocinas.png",
@@ -140,7 +158,7 @@ const PATROCINADORES = [
     },
   },
   {
-    id: 9,
+    id: 10,
     nombre: "Aliberico",
     tipo: "Grupo metalúrgico",
     logo: "/public/sponsors/logo_aliberico.png",
