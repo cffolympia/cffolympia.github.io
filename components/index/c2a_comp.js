@@ -275,13 +275,13 @@ c2aTemplate.innerHTML = `
         </div>
         <div class="social__img-container social__img-container--2">
             <img
-            src="/public/img/social-index/soñamos1.jpg"
+            src="/public/img/social-index/soñamos1.JPG"
             alt="Imagen del Olympia"
             class="social__img social__img--2" />
         </div>
         <div class="social__img-container social__img-container--3">
             <img
-            src="/public/img/social-index/soñamos3.jpg"
+            src="/public/img/social-index/soñamos3.JPG"
             alt="Imagen del Olympia"
             class="social__img social__img--3" />
         </div>
