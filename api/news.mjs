@@ -368,51 +368,87 @@ let a49 = new Articulo({
 });
 
 let a50 = new Articulo({
+  title: "JUGADORA MAHOU 5 ESTRELLAS | SEPTIEMBRE",
+  imgLink: "/public/img/noticias/noticia_50.JPG",
+  text: "La #JugadoraCincoEstrellas del mes de septiembre es Lucía Sánchez. Su rendimiento, compromiso y aportación al equipo la han convertido en la mejor jugadora del mes. ¡Enhorabuena, Lucía!",
+  date: "30/09/2025",
+  imgPosition: "center center",
+});
+
+let a51 = new Articulo({
   title: "ABONOS TEMPORADA 25/26 YA DISPONIBLES",
-  imgLink: "/public/img/noticias/noticia_50.png",
+  imgLink: "/public/img/noticias/noticia_51.png",
   text: "Ya están disponibles los abonos de la temporada 25/26 para el primer equipo y el filial. Puedes elegir entre el abono básico, válido para un solo equipo, o el abono completo para disfrutar de ambos. Si aún no tienes el tuyo, estás a tiempo de vivir toda la segunda vuelta desde la grada. ¡No te quedes sin él!",
   date: "14/10/2025",
   imgPosition: "center center",
 });
 
-let a51 = new Articulo({
+let a52 = new Articulo({
   title: "LUNES NOCHE - CLAUDIA HERNANDO",
-  imgLink: "/public/img/noticias/noticia_51.jpeg",
+  imgLink: "/public/img/noticias/noticia_52.jpeg",
   text: '<a href="https://www.rffmplay.es/videos/287538-programa-106">HAZ CLICK AQUI PARA ACCEDER!</a>',
   date: "20/10/2025",
   imgPosition: "center center",
 });
 
-let a52 = new Articulo({
+let a53 = new Articulo({
+  title: "JUGADORA MAHOU 5 ESTRELLAS | OCTUBRE",
+  imgLink: "/public/img/noticias/noticia_53.png",
+  text: "Elisa Puerta ha sido elegida Jugadora Mahou 5 Estrellas del mes de octubre gracias a su gran rendimiento y regularidad sobre el terreno de juego. ¡Enhorabuena, Eli!",
+  date: "31/10/2025",
+  imgPosition: "center center",
+});
+
+let a54 = new Articulo({
+  title: "JUGADORA MAHOU 5 ESTRELLAS | NOVIEMBRE",
+  imgLink: "/public/img/noticias/noticia_54.JPG",
+  text: "Cristina Rincón es la Jugadora Mahou 5 Estrellas del mes de noviembre. Su trabajo, esfuerzo y aportación al equipo han sido claves durante el mes. ¡Enhorabuena, Cris!",
+  date: "30/11/2025",
+  imgPosition: "center center",
+});
+
+let a55 = new Articulo({
+  title: "JUGADORA MAHOU 5 ESTRELLAS | DICIEMBRE",
+  imgLink: "/public/img/noticias/noticia_55.JPG",
+  text: "Yolanda Albalat ha sido reconocida como Jugadora Mahou 5 Estrellas del mes de diciembre tras un mes destacado por su compromiso y rendimiento con el equipo. ¡Enhorabuena, Yolanda!",
+  date: "22/12/2025",
+  imgPosition: "center center",
+});
+
+let a56 = new Articulo({
   title: "LUNES NOCHE - SAMMY",
   imgLink: "/public/img/noticias/noticia_52.jpeg",
   date: "12/01/2026",
   imgPosition: "center center",
 });
-let a53 = new Articulo({
+let a57 = new Articulo({
   title: "EL FILIAL ARRANCA EL AÑO COMO LÍDER",
-  imgLink: "/public/img/noticias/noticia_53.JPG",
+  imgLink: "/public/img/noticias/noticia_57.JPG",
   text: "El filial inicia el año con mucha energía, imponiéndose por 0-1 ante el hasta entonces líder y alcanzando la primera posición de la tabla. Gran trabajo de todo el equipo para seguir creyendo en la lucha por el campeonato liguero. Con tres jugadoras entre las máximas goleadoras y siendo el equipo menos goleado, continúan creciendo a nivel individual y colectivo.",
   date: "21/01/2026",
   imgPosition: "center center",
 });
 
-let a54 = new Articulo({
+let a58 = new Articulo({
   title: "NUEVO PATROCINADOR - CEO DENTAL",
-  imgLink: "/public/img/noticias/noticia_54.png",
+  imgLink: "/public/img/noticias/noticia_58.png",
   text: "La clínica dental CEO Dental se une a la familia del Olympia para crecer de la mano, apoyando el fútbol femenino desde la base y dando visibilidad a nuestras benjaminas.",
   date: "21/01/2026",
   imgPosition: "center center",
 });
-let a55 = new Articulo({
+let a59 = new Articulo({
   title: "ACTUALIDAD DEL PRIMER EQUIPO",
-  imgLink: "/public/img/noticias/noticia_55.JPG",
+  imgLink: "/public/img/noticias/noticia_59.JPG",
   text: "Nuestro primer equipo sigue creyendo en estar en los puestos altos de la clasificación gracias al trabajo, el compromiso y la actitud. Tras un inicio de temporada complicado, el esfuerzo diario comienza a reflejarse poco a poco en los resultados.",
   date: "22/01/2026",
   imgPosition: "center center",
 });
 
 NOTICIAS.push(
+  a59,
+  a58,
+  a57,
+  a56,
   a55,
   a54,
   a53,
