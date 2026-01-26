@@ -15,7 +15,7 @@ const seniorAMatchSlide = document.createElement("template");
 const backgroundImage =
   hashtag === "#COPADELAREINA"
     ? 'url("/public/img/hero_slides/copa-reina.jpg")'
-    : 'url("/public/img/hero_slides/slide_senior_a.jpg")';
+    : 'url("/public/img/hero_slides/IMG_3254.jpg")';
 
 seniorAMatchSlide.innerHTML = `
 <style>
@@ -591,13 +591,13 @@ class SeniorAMatchSlide extends HTMLElement {
         undefined,
         {
           minimumIntegerDigits: 2,
-        }
+        },
       );
       const minutes = Math.floor((timeSpan % hour) / minute).toLocaleString(
         undefined,
         {
           minimumIntegerDigits: 2,
-        }
+        },
       );
       const seconds = Math.floor((timeSpan % minute) / second);
       const seconds2digits = seconds.toLocaleString(undefined, {

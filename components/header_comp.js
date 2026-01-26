@@ -93,6 +93,8 @@ nav {
   color: var(--white);
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
 }
 .nav__link:hover,
 .nav__link:focus {
@@ -100,6 +102,111 @@ nav {
 }
 .nav__hamb-menu {
   display: none;
+}
+
+/* Estilo especial para Copa de la Reina */
+.nav__right .copa-reina .nav__link {
+  color: #8e44ad; /* morado */
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.nav__right .copa-reina .nav__link:hover,
+.nav__right .copa-reina .nav__link:focus {
+  color: #9b59b6;
+}
+
+/* Efecto de borde animado para Copa de la Reina */
+.nav__right .copa-reina .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6, #8e44ad);
+  transition: all 0.5s ease;
+  transform: translateX(-50%);
+}
+
+.nav__right .copa-reina .nav__link:hover::after {
+  width: 100%;
+}
+
+/* Efecto de brillo en el texto para Copa de la Reina */
+.nav__right .copa-reina .nav__link:hover {
+  text-shadow: 0 0 10px rgba(142, 68, 173, 0.7), 
+               0 0 20px rgba(142, 68, 173, 0.5),
+               0 0 30px rgba(142, 68, 173, 0.3);
+}
+
+/* Estilo especial para Estrellas */
+.nav__right .estrellas .nav__link {
+  color: #FFD700; /* dorado */
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.nav__right .estrellas .nav__link:hover,
+.nav__right .estrellas .nav__link:focus {
+  color: #FFE55C;
+}
+
+/* Efecto de destello para Estrellas */
+.nav__right .estrellas .nav__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, 
+              rgba(255, 215, 0, 0.4) 0%, 
+              transparent 70%);
+  opacity: 0;
+  transform: translateY(-50%) scale(0.5);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.nav__right .estrellas .nav__link:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* Efecto de estrellas animadas */
+.nav__right .estrellas .nav__link {
+  background: linear-gradient(45deg, #FFD700 25%, #FFE55C 50%, #FFD700 75%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Efecto de borde dorado para Estrellas */
+.nav__right .estrellas .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+              #FFD700, 
+              #FFE55C, 
+              #FFD700);
+  transition: all 0.5s ease;
+}
+
+.nav__right .estrellas .nav__link:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -147,6 +254,23 @@ nav {
     transition: all 0.5s;
     transform-origin: 17%;
   }
+  
+  /* Ajustes para móvil */
+  .nav__right .copa-reina .nav__link,
+  .nav__right .estrellas .nav__link {
+    font-size: clamp(1.4rem, 2.8rem, 3rem);
+  }
+  
+  /* Ajustar animaciones para móvil */
+  .nav__right .estrellas .nav__link {
+    animation: shine-mobile 3s linear infinite;
+  }
+  
+  @keyframes shine-mobile {
+    to {
+      background-position: 150% center;
+    }
+  }
 }
 </style>
 <header class="header">
@@ -159,9 +283,10 @@ nav {
   <ul class="nav__right">
     <!--<li class="nav__element"><a class="nav__link" href="/pages/renueva.html" style="text-decoration: underline; font-weight: 700">¡RENUEVA!</a></li> -->
     <li class="nav__element"><a class="nav__link" href="/pages/inscribete.html">INSCRÍBETE</a></li>
-    <li class="nav__element"><a class="nav__link" target="_blank" href="https://estrellasporlaigualdad.cffolympia.es">ESTRELLAS</a></li>
+    <li class="nav__element estrellas"><a class="nav__link" target="_blank" href="https://estrellasporlaigualdad.cffolympia.es">ESTRELLAS</a></li>
     <li class="nav__element"><a class="nav__link" target="_blank" href="https://university-soccer.com/">UNIVERSITY SOCCER</a></li>
     <!--<li class="nav__element"><a class="nav__link" href="/pages/equipos.html">EQUIPOS</a></li>-->
+    <li class="nav__element copa-reina"><a class="nav__link" href="/pages/copa-reina.html">COPA DE LA REINA</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/noticias.html?grupo=1">NOTICIAS</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/tienda.html">TIENDA</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/patrocinadores.html">PATROCINADORES</a></li>
@@ -185,30 +310,30 @@ class Header extends HTMLElement {
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(headerTemplate.content);
+
+    // Ahora accedemos a los elementos dentro del shadow DOM
+    const hamburger = shadowRoot.querySelector(".nav__hamb-menu");
+    const hamb1 = shadowRoot.querySelector(".nav__hamb-menu div:first-child");
+    const hamb2 = shadowRoot.querySelector(".nav__hamb-menu div:nth-child(2)");
+    const hamb3 = shadowRoot.querySelector(".nav__hamb-menu div:last-child");
+    const menu = shadowRoot.querySelector(".nav__right");
+    let menuActive = false;
+
+    hamburger.addEventListener("click", () => {
+      menuActive = !menuActive;
+      if (menuActive) {
+        menu.style.transform = "translateX(0%)";
+        hamb1.style.transform = "rotate(45deg)";
+        hamb2.style.opacity = "0";
+        hamb3.style.transform = "rotate(-45deg)";
+      } else {
+        menu.style.transform = "translateX(-100%)";
+        hamb1.style.transform = "rotate(0deg)";
+        hamb2.style.opacity = "1";
+        hamb3.style.transform = "rotate(0deg)";
+      }
+    });
   }
 }
 
 customElements.define("header-component", Header);
-
-const shadow = document.querySelector("header-component").shadowRoot;
-const hamburger = shadow.querySelector(".nav__hamb-menu");
-const hamb1 = shadow.querySelector(".nav__hamb-menu div:first-child");
-const hamb2 = shadow.querySelector(".nav__hamb-menu div:nth-child(2)");
-const hamb3 = shadow.querySelector(".nav__hamb-menu div:last-child");
-const menu = shadow.querySelector(".nav__right");
-let menuActive = false;
-
-hamburger.addEventListener("click", () => {
-  menuActive = !menuActive;
-  if (!menuActive) {
-    menu.style.transform = "translateX(0%)";
-    hamb1.style.transform = "rotate(45deg)";
-    hamb2.style.opacity = "0";
-    hamb3.style.transform = "rotate(-45deg)";
-  } else {
-    menu.style.transform = "translateX(-100%)";
-    hamb1.style.transform = "rotate(0deg)";
-    hamb2.style.opacity = "1";
-    hamb3.style.transform = "rotate(0deg)";
-  }
-});

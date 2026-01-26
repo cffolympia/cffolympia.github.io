@@ -13,6 +13,8 @@ c2aTemplate.innerHTML = `
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 .social__container {
     width: 100%;
@@ -25,11 +27,12 @@ c2aTemplate.innerHTML = `
 }
 .social__hashtag {
     font-family: var(--title);
-    font-weight: 600;
-    font-size: calc(0.293686 * 100vw * 0.7);
+    font-weight: 400;
+    font-size: calc(0.293686 * 100vw * 0.3); /* antes 0.7, ahora 0.5 */
     color: var(--white);
     padding: 0;
     margin: 0 0 2rem;
+    z-index: 2;
 }
 .social__hashtag span {
     color: transparent;
@@ -45,7 +48,7 @@ c2aTemplate.innerHTML = `
     align-items: center;
     flex-shrink: 0;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 .social__link {
     height: 100%;
@@ -81,26 +84,54 @@ c2aTemplate.innerHTML = `
 }
 .social__img-container {
     position: absolute;
+    width: 18%;
+    aspect-ratio: 0.7; /* Vertical - más alto que ancho */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 .social__img-container--1 {
-    width: 18.3%;
-    aspect-ratio: 0.75;
-    top: 0%;
-    left: 55%;
-    transform: rotate(10deg);
-    z-index: -1;
+    top: 15%;
+    left: 20%;
+    transform: rotate(-3deg);
 }
 .social__img-container--2 {
-    width: 28.57%;
-    aspect-ratio: 1.618;
-    bottom: 10%;
-    left: 16%;
-    transform: rotate(-5deg);
-    z-index: -1;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(2deg);
+}
+.social__img-container--3 {
+    top: 15%;
+    right: 20%;
+    transform: rotate(4deg);
 }
 .social__img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center; /* Esto es importante - centra la imagen */
+    transition: transform 0.5s ease;
+}
+.social__img-container:hover .social__img {
+    transform: scale(1.05);
+}
+
+/* Estilos específicos para cada imagen si necesitas ajustar el encuadre */
+.social__img--1 {
+    object-position: center center;
+}
+.social__img--2 {
+    object-position: center center;
+}
+.social__img--3 {
+    object-position: center center; /* Asegura que esté centrada */
+}
+
+/* Opcional: si necesitas un ajuste más fino para imágenes horizontales */
+.social__img-container.horizontal .social__img {
+    object-fit: cover;
+    object-position: center 30%; /* Ajusta según necesites */
 }
 
 @media (max-width: 1600px) {
@@ -110,10 +141,46 @@ c2aTemplate.innerHTML = `
     .social__links {
     height: 5rem;
     }
+    .social__img-container {
+        width: 20%;
+    }
+}
+@media (max-width: 1200px) {
+    .social__img-container {
+        width: 22%;
+    }
+    .social__img-container--1 {
+        left: 15%;
+    }
+    .social__img-container--3 {
+        right: 15%;
+    }
 }
 @media (max-width: 1000px) {
     .social {
     margin: 8rem 0;
+    }
+    .social__img-container {
+        width: 25%;
+        aspect-ratio: 0.75;
+    }
+    .social__img-container--1 {
+        left: 10%;
+    }
+    .social__img-container--3 {
+        right: 10%;
+    }
+}
+@media (max-width: 800px) {
+    .social__img-container {
+        width: 28%;
+        aspect-ratio: 0.8;
+    }
+    .social__img-container--1 {
+        left: 5%;
+    }
+    .social__img-container--3 {
+        right: 5%;
     }
 }
 @media (max-width: 680px) {
@@ -130,7 +197,20 @@ c2aTemplate.innerHTML = `
     text-stroke: 0.04rem var(--white);
     }
     .social__img-container {
-    display: none;
+        width: 30%;
+        aspect-ratio: 0.85;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .social__img-container--1 {
+        top: 20%;
+        left: 5%;
+    }
+    .social__img-container--2 {
+        top: 15%;
+    }
+    .social__img-container--3 {
+        top: 20%;
+        right: 5%;
     }
     .social__links {
     height: 4.7rem;
@@ -140,6 +220,21 @@ c2aTemplate.innerHTML = `
     border: 0.25rem solid var(--mint);
     }
 }
+@media (max-width: 480px) {
+    .social {
+        padding: 2rem;
+    }
+    .social__img-container {
+        width: 32%;
+        aspect-ratio: 0.9;
+    }
+    .social__img-container--1 {
+        left: 2%;
+    }
+    .social__img-container--3 {
+        right: 2%;
+    }
+}
 @media (max-width: 400px) {
     .social__links {
     height: 4rem;
@@ -147,6 +242,10 @@ c2aTemplate.innerHTML = `
     .social__link {
     margin-right: 1rem;
     border: 0.2rem solid var(--mint);
+    }
+    .social__img-container {
+        width: 35%;
+        aspect-ratio: 0.95;
     }
 }
 </style>
@@ -170,15 +269,21 @@ c2aTemplate.innerHTML = `
         </div>
         <div class="social__img-container social__img-container--1">
             <img
-            src="/public/img/social-index/img1.jpg"
+            src="/public/img/social-index/soñamos2.JPG"
             alt="Imagen del Olympia"
             class="social__img social__img--1" />
         </div>
         <div class="social__img-container social__img-container--2">
             <img
-            src="/public/img/social-index/img3.jpg"
+            src="/public/img/social-index/soñamos1.jpg"
             alt="Imagen del Olympia"
             class="social__img social__img--2" />
+        </div>
+        <div class="social__img-container social__img-container--3">
+            <img
+            src="/public/img/social-index/soñamos3.jpg"
+            alt="Imagen del Olympia"
+            class="social__img social__img--3" />
         </div>
     </div>
 </section>
@@ -193,15 +298,22 @@ class C2A extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(c2aTemplate.content);
 
-    // const shadow = document.querySelector("video_section-component").shadowRoot;
-    // const carousel = shadow.querySelector(".videos__carousel");
-    // const img1 = document.querySelector(".social__img--1");
-    // const img2 = document.querySelector(".social__img--2");
-    // window.onscroll = function () {
-    //   let position = window.pageYOffset || document.documentElement.scrollTop;
-    //   img1.style.marginTop = (position * 0.2) ** 1.000005 - 820 + "px";
-    //   img2.style.marginTop = (position * 0.5) ** 1.000005 - 600 + "px";
-    // };
+    // Opcional: Ajustar automáticamente el object-position según la orientación
+    setTimeout(() => {
+      const images = shadowRoot.querySelectorAll(".social__img");
+      images.forEach((img) => {
+        img.onload = function () {
+          // Si la imagen es más ancha que alta (horizontal), ajusta el encuadre
+          if (this.naturalWidth > this.naturalHeight) {
+            this.style.objectPosition = "center 30%";
+          } else {
+            this.style.objectPosition = "center center";
+          }
+        };
+        // Dispara el evento si la imagen ya está cargada
+        if (img.complete) img.onload();
+      });
+    }, 100);
   }
 }
 
