@@ -209,6 +209,73 @@ nav {
   width: 100%;
 }
 
+/* Estilo especial para University Soccer (rojo y azul) */
+.nav__right .university-soccer .nav__link {
+  font-weight: 700;
+  position: relative;
+  background: linear-gradient(90deg, #FF0000 50%, #FF0000 50%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease;
+}
+
+.nav__right .university-soccer .nav__link:hover,
+.nav__right .university-soccer .nav__link:focus {
+  background-position: 100% 0%;
+}
+
+/* Efecto de brillo para University Soccer */
+.nav__right .university-soccer .nav__link:hover {
+  text-shadow: 
+    0 0 10px rgba(255, 0, 0, 0.5),
+    0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* Efecto de línea animada mitad rojo mitad azul */
+.nav__right .university-soccer .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+              #FF0000 0%, 
+              #FF0000 50%, 
+              #0000FF 50%, 
+              #0000FF 100%);
+  transition: all 0.5s ease;
+}
+
+.nav__right .university-soccer .nav__link:hover::after {
+  width: 100%;
+}
+
+/* Efecto de sombras laterales */
+.nav__right .university-soccer .nav__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+              rgba(255, 0, 0, 0.1) 0%, 
+              rgba(255, 0, 0, 0) 25%,
+              rgba(0, 0, 255, 0) 75%,
+              rgba(0, 0, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.nav__right .university-soccer .nav__link:hover::before {
+  opacity: 1;
+}
+
 @media (max-width: 1000px) {
   .nav__right {
     background: var(--blue);
@@ -257,13 +324,22 @@ nav {
   
   /* Ajustes para móvil */
   .nav__right .copa-reina .nav__link,
-  .nav__right .estrellas .nav__link {
+  .nav__right .estrellas .nav__link,
+  .nav__right .university-soccer .nav__link {
     font-size: clamp(1.4rem, 2.8rem, 3rem);
   }
   
   /* Ajustar animaciones para móvil */
   .nav__right .estrellas .nav__link {
     animation: shine-mobile 3s linear infinite;
+  }
+  
+  .nav__right .university-soccer .nav__link {
+    background: linear-gradient(90deg, #FF0000 50%, #0000FF 50%);
+    background-size: 150% 100%;
+    background-position: 0% 0%;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
   
   @keyframes shine-mobile {
@@ -284,7 +360,7 @@ nav {
     <!--<li class="nav__element"><a class="nav__link" href="/pages/renueva.html" style="text-decoration: underline; font-weight: 700">¡RENUEVA!</a></li> -->
     <li class="nav__element"><a class="nav__link" href="/pages/inscribete.html">INSCRÍBETE</a></li>
     <li class="nav__element estrellas"><a class="nav__link" target="_blank" href="https://estrellasporlaigualdad.cffolympia.es">ESTRELLAS</a></li>
-    <li class="nav__element"><a class="nav__link" target="_blank" href="https://university-soccer.com/">UNIVERSITY SOCCER</a></li>
+    <li class="nav__element university-soccer"><a class="nav__link" target="_blank" href="https://university-soccer.com/">UNIVERSITY SOCCER</a></li>
     <!--<li class="nav__element"><a class="nav__link" href="/pages/equipos.html">EQUIPOS</a></li>-->
     <li class="nav__element copa-reina"><a class="nav__link" href="/pages/copa-reina.html">COPA DE LA REINA</a></li>
     <li class="nav__element"><a class="nav__link" href="/pages/noticias.html?grupo=1">NOTICIAS</a></li>
