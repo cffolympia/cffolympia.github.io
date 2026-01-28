@@ -55,10 +55,9 @@ let jm8 = new JugadoraMahou({
   imageURL: "/public/img/mahou/abril25.jpeg",
 });
 
-JUGADORAS_MAHOU.push(jm8, jm7, jm6, jm5, jm4, jm3, jm2, jm1);
+JUGADORAS_MAHOU.push();
 
 export default JUGADORAS_MAHOU;
-
 
 //TEMP 22-23 - 23-24
 // let jm1 = new JugadoraMahou({

@@ -63,7 +63,7 @@ copaReinaTemplate.innerHTML = `
 
   .temporada-badge {
     display: inline-block;
-    background: linear-gradient(45deg, var(--copa-purple), var(--copa-gold));
+    background: var(--copa-purple);
     color: var(--white);
     padding: 0.5rem 2rem;
     border-radius: 30px;
@@ -116,7 +116,7 @@ copaReinaTemplate.innerHTML = `
 
   .boton-galeria {
     display: inline-block;
-    background: linear-gradient(45deg, var(--copa-purple), var(--copa-gold));
+    background: var(--copa-purple);
     color: var(--white);
     padding: 1.2rem 3rem;
     border-radius: 30px;
@@ -462,7 +462,7 @@ copaReinaTemplate.innerHTML = `
 
   .merch-button {
     display: inline-block;
-    background: linear-gradient(45deg, var(--copa-purple), var(--copa-gold));
+    background: var(--copa-purple);
     color: var(--white);
     padding: 1rem 3rem;
     border-radius: 30px;

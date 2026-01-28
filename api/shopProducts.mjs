@@ -170,7 +170,13 @@ let SHOP_PRODUCTS = [
     hoverImgURL: "/public/img/shop/camiseta_copadelareina_back.png",
     productImages: [
       "/public/img/shop/camiseta_copadelareina_front.png",
+      "/public/img/shop/camiseta_cdr_morado_claro_front.png",
+      "/public/img/shop/camiseta_cdr_rosa_front.png",
       "/public/img/shop/camiseta_copadelareina_back.png",
+      "/public/img/shop/camiseta_cdr_morado_claro_back.png",
+      "/public/img/shop/camiseta_cdr_morado_claro_back2.png",
+      "/public/img/shop/camiseta_cdr_rosa_back.png",
+      "/public/img/shop/camiseta_cdr_rosa_back2.png",
     ],
     pageName: "camiseta_reina",
     pageURL: "/pages/producto_tienda.html?producto=camiseta_reina",
@@ -183,7 +189,7 @@ let SHOP_PRODUCTS = [
       {
         name: "Color",
         isRequired: true,
-        options: ["Color: Lavanda"],
+        options: ["Color: Lavanda", "Coral claro", "Beige rosado"],
       },
     ],
     otherInputs: [],

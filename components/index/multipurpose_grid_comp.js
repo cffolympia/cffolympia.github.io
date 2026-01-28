@@ -447,13 +447,13 @@ multiPurposeGridTemplate.innerHTML = `
 </style>
 <!-- background-image: url('public/img/club/background/delantera.jpg') -->
 
-<section class="grid">
+<section class="grid" >
   <div class="grid__group grid__group--club">
     <h2 class="group__title">LA CANTERA</h2>
     <div class="club__carousel">
     </div>
   </div>
-  <div class="grid__group grid__group--mahou">
+  <div class="grid__group grid__group--mahou" style="display:none;">
     <div class="mahou__carousel">
     </div>
   </div>
@@ -469,7 +469,9 @@ class MultiPurposeGrid extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(multiPurposeGridTemplate.content);
 
-    const shadow = document.querySelector("multipurpose_grid-component").shadowRoot;
+    const shadow = document.querySelector(
+      "multipurpose_grid-component",
+    ).shadowRoot;
 
     const carousel = shadow.querySelector(".club__carousel");
     const mahouSection = shadow.querySelector(".mahou__carousel");
@@ -483,7 +485,7 @@ class MultiPurposeGrid extends HTMLElement {
       carousel.innerHTML += `
       <div class="carousel__team">
         <div class="carousel__content">
-          <a href="" class="carousel__anchor">${name}</a> <!-- ${pageURL} -->
+          <a class="carousel__anchor">${name}</a> <!-- ${pageURL} -->
         </div>
         <img src="${imgURL}" alt="Imagen del equipo" loading="lazy" class="carousel__img" />
       </div>
@@ -491,13 +493,14 @@ class MultiPurposeGrid extends HTMLElement {
     }
 
     //MAHOU SECTION LOADER
+    ```
     for (let i = 1; i <= JUGADORAS_MAHOU.length; i++) {
       let name = JUGADORAS_MAHOU[i - 1].name;
       let imageURL = JUGADORAS_MAHOU[i - 1].imageURL;
       let month = JUGADORAS_MAHOU[i - 1].month;
-
-      mahouSection.innerHTML += `
-      <div class="carousel__mahou-player">
+```;
+    mahouSection.innerHTML += `
+      <div class="carousel__mahou-player" style="display:none;">
         <div class="mahou-player__content">
           <div class="mahou-player__flex">
             <span class="mahou-player__text">JUGADORA</span>
@@ -511,7 +514,10 @@ class MultiPurposeGrid extends HTMLElement {
         <img src="${imageURL}" title="${name}" loading="lazy" alt="Imagen de la jugadora Mahou 5 estrellas" class="mahou-player__img" />
       </div>
       `;
+
+    ```
     }
+
 
     //CAROSUEL GRABBING
     const firstImg = shadow.querySelector(".carousel__team");
@@ -545,11 +551,15 @@ class MultiPurposeGrid extends HTMLElement {
       if (carousel.scrollLeft > prevScrollLeft) {
         //Scroll der
         return (carousel.scrollLeft +=
-          positionDifference > firstImageWidth / 2.4 ? valDifference : -positionDifference);
+          positionDifference > firstImageWidth / 2.4
+            ? valDifference
+            : -positionDifference);
       }
       //Scroll izq
       carousel.scrollLeft -=
-        positionDifference > firstImageWidth / 2.4 ? valDifference : -positionDifference;
+        positionDifference > firstImageWidth / 2.4
+          ? valDifference
+          : -positionDifference;
     };
     carousel.addEventListener("mousedown", dragStart);
     carousel.addEventListener("mousemove", dragging);
@@ -600,6 +610,7 @@ class MultiPurposeGrid extends HTMLElement {
     mahouSection.addEventListener("mousedown", dragStartMahou);
     mahouSection.addEventListener("mousemove", draggingMahou);
     mahouSection.addEventListener("mouseup", dragStopMahou);
+  ```;
   }
 }
 

@@ -65,12 +65,13 @@ let ep8 = new Episode({
 let ep9 = new Episode({
   name: "09/ Claudia Hernando",
   imgURL: "/public/img/video_covers/rffmplay.jpg",
-  videoURL: "https://www.rffmplay.es/videos/287538-programa-106",
+  episodeURL: "https://www.rffmplay.es/videos/287538-programa-106",
 });
 
 let ep10 = new Episode({
   name: "10/  Sammy",
   imgURL: "/public/img/video_covers/rffmplay.jpg",
+  episodeURL: "  https://www.rffmplay.es/",
 });
 
 //Solo se ponen los de cada año, una vez se termine la tempo, se espera al primero de la siguiente y se eliminan el resto.

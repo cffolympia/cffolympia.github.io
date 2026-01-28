@@ -64,7 +64,13 @@ let v9 = new Video({
   videoURL: "https://www.rffmplay.es/videos/287538-programa-106",
 });
 
+let v10 = new Video({
+  name: "El Día Después (24/11/2025): Que ninguna niña se quede sin jugar",
+  imgURL: "/public/img/video_covers/cover_diadespues.jpg",
+  videoURL: "https://www.youtube.com/watch?v=9UIr5GS8IG4",
+});
+
 //Máximo 15-20 video para no petar la web, iremos quitando superando el umbral de los 15 yo creo
-VIDEOS.push(v9, v8, v7, v6, v5, v4, v3, v2);
+VIDEOS.push(v10);
 
 export default VIDEOS;

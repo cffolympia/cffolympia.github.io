@@ -1869,7 +1869,7 @@ let SeniorA = new Team({
       pageURL: "https://www.ruesma.com/",
     },
   ],
-staff: [
+  staff: [
     {
       name: "Ivan Pernia",
       imgURL: "/public/img/equipos/senior_a/ivan_pernia.png",
@@ -1914,8 +1914,8 @@ staff: [
       name: "Andrea Cacho",
       imgURL: "/public/img/equipos/senior_a/andrea_cacho.png",
       status: "Delegada",
-    }
-],
+    },
+  ],
   players: [
     {
       name: "Andrea Rodriguez",
@@ -2036,8 +2036,8 @@ staff: [
       imgURL: "/public/img/equipos/senior_a/lucia_sanchez.png",
       number: "11",
       position: "Delantera",
-    }
-]
+    },
+  ],
 });
 
 let SeniorB = new Team({
@@ -2093,8 +2093,8 @@ let SeniorB = new Team({
       name: "Andrea Cacho",
       imgURL: "/public/img/equipos/senior_a/andrea_cacho.png",
       status: "Delegada",
-    }
-],
+    },
+  ],
   players: [
     {
       name: "Andrea Rodriguez",
@@ -2215,8 +2215,8 @@ let SeniorB = new Team({
       imgURL: "/public/img/equipos/senior_a/lucia_sanchez.png",
       number: "11",
       position: "Delantera",
-    }
-]
+    },
+  ],
 });
 
 let SeniorC = new Team({
@@ -2538,6 +2538,27 @@ let Veteranas = new Team({
 });
 
 //EXPORTATION
-CLUB.push(SeniorA, SeniorB, SeniorC, BenjaminA, BenjaminB, BenjaminC, AlevinA, AlevinB, AlevinC, InfantilA, InfantilB, InfantilC, InfantilD, InfantilF11, CadeteA, CadeteB, CadeteC, JuvenilA, JuvenilB, Veteranas);
+CLUB.push(
+  SeniorA,
+  SeniorB,
+  SeniorC,
+  BenjaminA,
+  BenjaminB,
+  BenjaminC,
+  AlevinA,
+  AlevinB,
+  AlevinC,
+  InfantilA,
+  InfantilB,
+  InfantilC,
+  InfantilD,
+  InfantilF11,
+  CadeteA,
+  CadeteB,
+  CadeteC,
+  JuvenilA,
+  JuvenilB,
+  Veteranas,
+);
 
 export { CLUB, SeniorA };
