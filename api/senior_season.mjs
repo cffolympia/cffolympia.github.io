@@ -203,7 +203,7 @@ let SEASON_SENIOR_A = [
     date: "Feb 08, 2026 00:00:00",
     shortDate: "08/02/26",
     isLocal: false,
-    result: "-",
+    result: "0-1",
     mapsURL: "https://maps.app.goo.gl/mBWUaD5pZk2CvFyD9",
     liveURL: "",
     hashtag: "#OLYMPIAVIERA",
