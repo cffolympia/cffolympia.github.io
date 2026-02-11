@@ -417,7 +417,7 @@ let a55 = new Articulo({
 
 let a56 = new Articulo({
   title: "LUNES NOCHE - SAMMY",
-  imgLink: "/public/img/noticias/noticia_52.jpeg",
+  imgLink: "/public/img/noticias/noticia_56.jpeg",
   date: "12/01/2026",
   imgPosition: "center center",
 });
@@ -443,8 +443,33 @@ let a59 = new Articulo({
   date: "22/01/2026",
   imgPosition: "center center",
 });
+let a60 = new Articulo({
+  title: "JUGADORA MAHOU 5 ESTRELLAS | ENERO",
+  imgLink: "/public/img/noticias/noticia_60.jpeg",
+  text: "Andrea Rodríguez ha sido elegida Jugadora Mahou 5 Estrellas del mes de enero gracias a su esfuerzo, compromiso y rendimiento durante el mes. ¡Enhorabuena, Andrea!",
+  date: "31/01/2026",
+  imgPosition: "center center",
+});
+
+let a61 = new Articulo({
+  title: "LUNES NOCHE - CLARA GÓMEZ",
+  imgLink: "/public/img/noticias/noticia_61.jpeg",
+  date: "10/02/2026",
+  imgPosition: "center center",
+});
+
+let a62 = new Articulo({
+  title: "ÁLBUM EDICIÓN ESPECIAL OLYMPIA",
+  imgLink: "/public/img/noticias/noticia_62.jpeg",
+  text: "Ya está disponible el álbum oficial de cromos del CFF Olympia edición 2025-2026, con jugadoras, equipos y staff del club. Esta colección oficial incluye todos los equipos y todos los cromos necesarios para completarla, con un diseño exclusivo Olympia. Reserva ya el tuyo por 27 €.",
+  date: "11/02/2026",
+  imgPosition: "center center",
+});
 
 NOTICIAS.push(
+  a62,
+  a61,
+  a60,
   a59,
   a58,
   a57,

@@ -1871,35 +1871,45 @@ let SeniorA = new Team({
   ],
   staff: [
     {
-      name: "Ivan Pernia",
-      imgURL: "/public/img/equipos/senior_a/ivan_pernia.png",
-      status: "Primer entrenador",
+      name: "Arantxa de la Chica",
+      imgURL: "/public/img/equipos/senior_a/arantxa_de_la_chica.png",
+      status: "Primera entrenadora",
     },
-    {
-      name: "David González",
-      imgURL: "/public/img/equipos/senior_a/david_gonzalez.png",
-      status: "Segundo entrenador",
-    },
+    //{
+    //  name: "Ivan Pernia",
+    //  imgURL: "/public/img/equipos/senior_a/ivan_pernia.png",
+    //  status: "Primer entrenador",
+    //},
+    //{
+    //  name: "David González",
+    //  imgURL: "/public/img/equipos/senior_a/david_gonzalez.png",
+    //  status: "Segundo entrenador",
+    //},
     {
       name: "Sergio De La Fuente",
       imgURL: "/public/img/equipos/senior_a/sergio_de_la_fuente.png",
-      status: "Asistente",
+      status: "Segundo entrenador",
+    },
+    {
+      name: "Abiel Ojeda",
+      imgURL: "/public/img/equipos/senior_a/abiel_ojeda.png",
+      status: "Preparador Físico",
     },
     {
       name: "Adrian Sanchez",
       imgURL: "/public/img/equipos/senior_a/adrian_sanchez.png",
       status: "Entrenador de Porteras",
     },
-    {
-      name: "Mauri Richards",
-      imgURL: "/public/img/equipos/senior_a/mauri_richards.png",
-      status: "Preparador físico",
-    },
-    {
-      name: "Daniel Rojas",
-      imgURL: "/public/img/equipos/senior_a/daniel_rojas.png",
-      status: "Preparador físico",
-    },
+    //{
+    // name: "Mauri Richards",
+    // imgURL: "/public/img/equipos/senior_a/mauri_richards.png",
+    // status: "Preparador físico",
+    //},
+    //{
+    // name: "Daniel Rojas",
+    // imgURL: "/public/img/equipos/senior_a/daniel_rojas.png",
+    // status: "Preparador físico",
+    //},
     {
       name: "Sofía Perez",
       imgURL: "/public/img/equipos/senior_a/sofia_perez.png",
@@ -2025,12 +2035,14 @@ let SeniorA = new Team({
       number: "7",
       position: "Delantera",
     },
-    {
-      name: "Laura Viñas",
-      imgURL: "/public/img/equipos/senior_a/laura_vinas.png",
-      number: "18",
-      position: "Delantera",
-    },
+
+    //{
+    //  name: "Laura Viñas",
+    //  imgURL: "/public/img/equipos/senior_a/laura_vinas.png",
+    //  number: "18",
+    //  position: "Delantera",
+    //},
+
     {
       name: "Lucía Sanchez",
       imgURL: "/public/img/equipos/senior_a/lucia_sanchez.png",
@@ -2074,11 +2086,11 @@ let SeniorB = new Team({
       imgURL: "/public/img/equipos/senior_a/mauri_richards.png",
       status: "Preparador físico",
     },
-    {
-      name: "Daniel Rojas",
-      imgURL: "/public/img/equipos/senior_a/daniel_rojas.png",
-      status: "Preparador físico",
-    },
+    //{
+    // name: "Daniel Rojas",
+    //  imgURL: "/public/img/equipos/senior_a/daniel_rojas.png",
+    //  status: "Preparador físico",
+    // },
     {
       name: "Sofía Perez",
       imgURL: "/public/img/equipos/senior_a/sofia_perez.png",
@@ -2168,12 +2180,12 @@ let SeniorB = new Team({
       number: "16",
       position: "Centrocampista",
     },
-    {
-      name: "Cristina Rincón",
-      imgURL: "/public/img/equipos/senior_a/cristina_rincon.png",
-      number: "20",
-      position: "Centrocampista",
-    },
+    //{
+    //   name: "Cristina Rincón",
+    // imgURL: "/public/img/equipos/senior_a/cristina_rincon.png",
+    //   number: "20",
+    //   position: "Centrocampista",
+    // },
     {
       name: "Ainara Mauri",
       imgURL: "/public/img/equipos/senior_a/ainara_mauri.png",
