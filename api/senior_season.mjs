@@ -214,7 +214,7 @@ let SEASON_SENIOR_A = [
     date: "Feb 15, 2026 00:00:00",
     shortDate: "15/02/26",
     isLocal: true,
-    result: "-",
+    result: "2-0",
     mapsURL: "https://maps.app.goo.gl/d2WLLm51F5Qv8iQJA",
     liveURL: "",
     hashtag: "#OLYMPIAGRANADA",
