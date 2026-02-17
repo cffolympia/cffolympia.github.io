@@ -296,11 +296,11 @@ mainInfoTemplate.innerHTML = `
 <section class="info">
   <div class="info__container info__horario--jug">
     <h2 class="info__title">HORARIO GENERAL</h2>
-    <a href="/public/docs/Horarios de Entrenamiento CFF Olympia Temporada 24-25.pdf" target="_blank" class="info__anchor">Ver Horario</a>
+    <a href="/public/docs/Horarios-entrenamientos-equipos-25-26.pdf" target="_blank" class="info__anchor">Ver Horario</a>
   </div>
   <div class="info__container info__horario--por">
     <h2 class="info__title">HORARIO PORTERAS</h2>
-    <a href="/public/docs/Horarios de Entrenamiento de Porteras CFF Olympia Temporada 24-25.pdf" target="_blank" class="info__anchor">Ver Horario</a>
+    <a href="/public/docs/Horarios-entrenamientos-porteras-25-26.pdf" target="_blank" class="info__anchor">Ver Horario</a>
   </div>
   <div class="info__container info__rgpd">
     <h2 class="info__title">PRIVACIDAD</h2>
