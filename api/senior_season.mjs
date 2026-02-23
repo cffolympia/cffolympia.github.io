@@ -225,7 +225,7 @@ let SEASON_SENIOR_A = [
     date: "Feb 22, 2026 00:00:00",
     shortDate: "22/02/26",
     isLocal: false,
-    result: "-",
+    result: "1-1",
     mapsURL: "https://maps.app.goo.gl/Jkpre5c8snx4x3No7",
     liveURL: "",
     hashtag: "#OLYMPIAGETAFE",
