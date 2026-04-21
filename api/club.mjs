@@ -2000,9 +2000,9 @@ let SeniorA = new Team({
       position: "Centrocampista",
     },
     {
-      name: "Cristina Rincón",
-      imgURL: "/public/img/equipos/senior_a/cristina_rincon.png",
-      number: "20",
+      name: "Patricia Camacho",
+      imgURL: "/public/img/equipos/senior_a/patri_camacho.png",
+      number: "12",
       position: "Centrocampista",
     },
     {
