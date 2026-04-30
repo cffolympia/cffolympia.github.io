@@ -466,7 +466,27 @@ let a62 = new Articulo({
   imgPosition: "center center",
 });
 
+let a63 = new Articulo({
+  title: "EL SENIOR B, CAMPEÓN DE TERCERA FEDERACIÓN FEMENINA",
+  imgLink: "/public/img/noticias/noticia_63.jpeg",
+  text: "El Senior B ha sido campeón de la categoría Tercera Federación Femenina. Enhorabuena a todas las jugadoras y al cuerpo técnico por este gran logro.",
+  date: "30/04/2026",
+  imgPosition: "center center",
+});
+
+let a64 = new Articulo({
+  title: "LUCÍA NÚÑEZ, MÁXIMA GOLEADORA DE LA CATEGORÍA",
+  imgLink: "/public/img/noticias/noticia_64.jpeg",
+  text: "Lucía Núñez ha sido la máxima goleadora de la categoría, firmando una temporada destacada por su capacidad anotadora.",
+  date: "30/04/2026",
+  imgPosition: "center top",
+});
+
+
+
 NOTICIAS.push(
+  a64,
+  a63,
   a62,
   a61,
   a60,

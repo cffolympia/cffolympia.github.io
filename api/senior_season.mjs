@@ -302,7 +302,7 @@ let SEASON_SENIOR_A = [
     date: "Apr 26, 2026 00:00:00",
     shortDate: "26/04/26",
     isLocal: false,
-    result: "-",
+    result: "3-1",
     mapsURL: "https://maps.app.goo.gl/RHeKBiLuskCaBj3F9",
     liveURL: "",
     hashtag: "#OLYMPIAGUINIGUADA",
