@@ -145,6 +145,13 @@ allNewsTemplate.innerHTML = `
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
+
+.article__video {
+  object-fit: contain;
+}
+
+
+
 .news__article:hover .article__img {
   transform: scale(1.03) rotate(1deg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -521,15 +528,29 @@ class AllNewsComp extends HTMLElement {
       let date = NOTICIAS[i - 1].date;
       let imgPos = NOTICIAS[i - 1].imgPosition;
 
+      let mediaHTML = "";
+
+      if (imgLink.endsWith(".mp4")) {
+        mediaHTML = `
+    <video class="article__img article__video" controls>
+      <source src="${imgLink}" type="video/mp4">
+      Tu navegador no soporta vídeo.
+    </video>`;
+      } else {
+        mediaHTML = `
+    <img class="article__img" src="${imgLink}" style="object-position: ${imgPos};" alt="${title}" />`;
+      }
+
+
       newsContainer.innerHTML += `
-      <div id="news${i}" class="news__article">
-        <div class="article__content">
-          <h3 class="article__title">${title}</h3>
-          <span class="article__date">${date}</span>
-          <p class="article__text">${text}</p>
-        </div>
-        <img class="article__img" src="${imgLink}" style="object-position: ${imgPos};" alt="${title}" />
-      </div>`;
+  <div id="news${i}" class="news__article">
+    <div class="article__content">
+      <h3 class="article__title">${title}</h3>
+      <span class="article__date">${date}</span>
+      <p class="article__text">${text}</p>
+    </div>
+    ${mediaHTML}
+  </div>`;
     }
 
     for (let i = 1; i <= numeroGrupos; i++) {

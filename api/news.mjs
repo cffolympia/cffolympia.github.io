@@ -482,9 +482,19 @@ let a64 = new Articulo({
   imgPosition: "center top",
 });
 
+let a65 = new Articulo({
+  title: "CELEBRACIÓN DEL TÍTULO",
+  imgLink: "/public/img/noticias/noticia_65.mp4",
+  text: "Celebración del Senior B tras proclamarse campeonas.",
+  date: "30/04/2026",
+  imgPosition: "center top",
+});
+
+
 
 
 NOTICIAS.push(
+  a65,
   a64,
   a63,
   a62,
