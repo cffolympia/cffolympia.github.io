@@ -274,7 +274,6 @@ copaReinaTemplate.innerHTML = `
     z-index: 10;
   }
 
-  /* EL RESTO DE ESTILOS SE MANTIENE IGUAL */
   /* PARTIDOS */
   .copa-partidos {
     margin: 6rem 0;
@@ -361,34 +360,78 @@ copaReinaTemplate.innerHTML = `
 
   .partido-estado {
     display: inline-block;
-    background: rgba(76, 175, 80, 0.2);
-    color: #4CAF50;
+    background: rgba(255, 193, 7, 0.2);
+    color: #FFC107;
     padding: 0.3rem 1rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
   }
 
+  /* NUEVO: ALINEACIÓN HORIZONTAL DE ESCUDOS */
   .partido-equipos {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     margin: 2rem 0;
   }
 
   .equipo-local, .equipo-visitante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .equipo-local {
+    text-align: right;
+  }
+
+  .equipo-visitante {
+    text-align: left;
+  }
+
+  .escudo-partido {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .nombre-equipo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--white);
-    margin: 0.5rem 0;
+    line-height: 1.2;
+  }
+
+  .partido-resultado-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    padding: 0 0.5rem;
   }
 
   .resultado {
     font-family: 'Anton', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     background: linear-gradient(45deg, var(--copa-gold), var(--white));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    margin: 1rem 0;
+    line-height: 1;
+  }
+
+  .resultado-pendiente {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+    opacity: 0.5;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
 
   /* MERCHANDISING */
@@ -597,6 +640,58 @@ copaReinaTemplate.innerHTML = `
     .copa-resumen {
       padding: 2rem;
     }
+
+    .escudo-partido {
+      width: 40px;
+      height: 40px;
+    }
+
+    .nombre-equipo {
+      font-size: 1rem;
+    }
+
+    .resultado {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .partido-equipos {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .equipo-local, .equipo-visitante {
+      flex-direction: row;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .equipo-local {
+      justify-content: flex-start;
+    }
+
+    .equipo-visitante {
+      justify-content: flex-start;
+    }
+
+    .partido-resultado-centro {
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    .escudo-partido {
+      width: 35px;
+      height: 35px;
+    }
+
+    .nombre-equipo {
+      font-size: 1rem;
+    }
+
+    .resultado-pendiente {
+      font-size: 1.2rem;
+    }
   }
 
   @media (max-width: 400px) {
@@ -618,7 +713,12 @@ copaReinaTemplate.innerHTML = `
     }
     
     .resultado {
-      font-size: 2.8rem;
+      font-size: 2rem;
+    }
+
+    .escudo-partido {
+      width: 30px;
+      height: 30px;
     }
   }
 </style>
@@ -628,8 +728,7 @@ copaReinaTemplate.innerHTML = `
     <!-- HEADER -->
     <div class="copa-header">
       <h1 class="copa-title">COPA DE LA REINA</h1>
-      <p class="copa-subtitle">La primera participación histórica del CFF Olympia</p>
-      <div class="temporada-badge">TEMPORADA 2025-2026</div>
+      <div class="temporada-badge">TEMPORADA 2026-2027</div>
     </div>
 
     <!-- IMAGEN PRINCIPAL -->
@@ -637,7 +736,7 @@ copaReinaTemplate.innerHTML = `
       <div class="imagen-principal-container">
         <img src="/public/img/copa-reina/carousel1.jpg" alt="CFF Olympia en Copa de la Reina" class="imagen-principal">
         <div class="imagen-overlay">
-          <h3>Primera participación histórica en la Copa de la Reina</h3>
+          <h3>Imágenes de la Copa de la Reina</h3>
         </div>
       </div>
     </div>
@@ -645,7 +744,7 @@ copaReinaTemplate.innerHTML = `
     <!-- BOTÓN PARA ABRIR GALERÍA -->
     <div class="boton-galeria-container">
       <button class="boton-galeria" id="abrirGaleria">
-        VER LOS MEJORES MOMENTOS DE LA COPA DE LA REINA
+        VER GALERÍA DE IMÁGENES
       </button>
     </div>
 
@@ -669,33 +768,27 @@ copaReinaTemplate.innerHTML = `
 
     <!-- PARTIDOS -->
     <div class="copa-partidos">
-      <h2 class="partidos-title">RESULTADOS COPA DE LA REINA</h2>
+      <h2 class="partidos-title">PARTIDOS COPA DE LA REINA 2026-2027</h2>
       <div class="partidos-grid">
-        <!-- Partido 1 -->
+        <!-- Partido 1 - 1ª Eliminatoria -->
         <div class="partido-card">
           <div class="partido-etapa">1ª ELIMINATORIA</div>
           <div class="partido-info">
-            <span class="partido-fecha">Miércoles 10/09 - 20:00</span>
-            <span class="partido-estado">Finalizado</span>
+            <span class="partido-fecha">Miércoles 09/09 - 21:00</span>
+            <span class="partido-estado">Próximo</span>
           </div>
           <div class="partido-equipos">
-            <div class="equipo-local">CFF Olympia Las Rozas</div>
-            <div class="resultado">5 - 3</div>
-            <div class="equipo-visitante">CD Getafe Femenino</div>
-          </div>
-        </div>
-
-        <!-- Partido 2 -->
-        <div class="partido-card">
-          <div class="partido-etapa">2ª ELIMINATORIA</div>
-          <div class="partido-info">
-            <span class="partido-fecha">Miércoles 01/10 - 20:00</span>
-            <span class="partido-estado">Finalizado</span>
-          </div>
-          <div class="partido-equipos">
-            <div class="equipo-local">CFF Olympia Las Rozas</div>
-            <div class="resultado">2 - 4</div>
-            <div class="equipo-visitante">CA Osasuna Fundación</div>
+            <div class="equipo-local">
+              <img src="/public/img/escudos/samper.png" alt="Samper" class="escudo-partido">
+              <span class="nombre-equipo">Samper</span>
+            </div>
+            <div class="partido-resultado-centro">
+              <span class="resultado-pendiente">vs</span>
+            </div>
+            <div class="equipo-visitante">
+              <img src="/public/img/escudos/olympia.png" alt="Olympia" class="escudo-partido">
+              <span class="nombre-equipo">CFF Olympia</span>
+            </div>
           </div>
         </div>
       </div>
@@ -709,7 +802,7 @@ copaReinaTemplate.innerHTML = `
         <div class="merch-info">
           <h3 class="merch-name">Camiseta Conmemorativa</h3>
           <p class="merch-description">
-            Camiseta oficial de la participación del CFF Olympia en la Copa de la Reina 2025-2026.
+            Camiseta oficial de la participación del CFF Olympia en la Copa de la Reina.
             Edición especial limitada con los colores del torneo.
           </p>
           <a href="https://www.cffolympia.es/pages/producto_tienda.html?producto=camiseta_reina" 
@@ -720,13 +813,13 @@ copaReinaTemplate.innerHTML = `
       </div>
     </div>
 
-    <!-- RESUMEN DE TEMPORADA -->
+    <!-- RESUMEN - TEMPORADA PASADA -->
     <div class="copa-resumen">
-      <h2 class="resumen-title">RESUMEN DE LA TEMPORADA</h2>
+      <h2 class="resumen-title">RESUMEN COPA DE LA REINA 2025-2026</h2>
       <p class="resumen-text">
-        En nuestra primera participación en la Copa de la Reina, el CFF Olympia demostró su valía 
-        y carácter frente a equipos de gran nivel. Una temporada de aprendizaje, crecimiento y 
-        momentos inolvidables que marcan el inicio de nuestra historia en la competición.
+        El CFF Olympia debutó en la Copa de la Reina con una actuación histórica. El equipo logró 
+        una victoria en la primera eliminatoria y cayó con orgullo en la segunda ronda ante un rival 
+        de gran nivel. Una experiencia que queda grabada en la historia del club.
       </p>
       
       <div class="resumen-estadisticas">
@@ -783,14 +876,14 @@ class CopaReina extends HTMLElement {
     // Evento para abrir modal
     abrirBtn.addEventListener("click", () => {
       modal.classList.add("active");
-      document.body.style.overflow = "hidden"; // Prevenir scroll
+      document.body.style.overflow = "hidden";
       this.mostrarSlideModal(this.modalCurrentSlide);
     });
 
     // Evento para cerrar modal
     cerrarBtn.addEventListener("click", () => {
       modal.classList.remove("active");
-      document.body.style.overflow = ""; // Restaurar scroll
+      document.body.style.overflow = "";
     });
 
     // Cerrar modal al hacer clic fuera
