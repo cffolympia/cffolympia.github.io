@@ -5,7 +5,7 @@ let SEASON_SENIOR_A = [
     date: "Sep 05, 2026 21:00:00",
     shortDate: "05/09/26",
     isLocal: false,
-    result: "",
+    result: "1-1",
     mapsURL: "",
     liveURL: "",
     hashtag: "#OLYMPIAARGUAL",
