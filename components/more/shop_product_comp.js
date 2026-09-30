@@ -655,36 +655,33 @@ class Product extends HTMLElement {
             <span class="product__price">${price}</span>
           </div>
           <form
-            class="product__form"
-            action="https://formsubmit.co/info@cffolympia.es"
-            method="POST">
-            <input type="hidden" name="_subject" value="Nuevo pedido de ${name}" />
-            <input type="hidden" name="_next" value="https://cffolympia.es/confirmacion_envio.html">
-            <input
-              type="hidden"
-              name="_url"
-              value="https://www.cffolympia.es/pages/producto_tienda.html?producto=camiseta_basica" />
-            <input type="hidden" name="Producto" value="${name}" />
-            <input
-              type="text"
-              class="form__input"
-              placeholder="NOMBRE COMPLETO JUGADORA"
-              name="Nombre"
-              required />
-            <input
-              type="text"
-              class="form__input"
-              placeholder="CATEGORÍA Y LETRA"
-              name="Categoria"
-              required />
-            <input type="email" class="form__input" placeholder="EMAIL" name="Email" required style="margin-bottom: 2rem;" />
-            ${selectorsHTML}
-            ${otherInputsHTML}
-            <span class="form__text">
-            Siempre revise que toda la información está correctamente escrita y rellene todos los campos necesarios. Escriba a <a href="mailto:info@cffolympia.es">info@cffolympia.es</a>.
-            </span> 
-            <button class="form__submit" type="submit">REALIZAR PEDIDO</button>
-          </form>
+  class="product__form"
+  action="https://submit-form.com/PgwcDyi34"
+  method="POST">
+  
+  <input type="hidden" name="_subject" value="Nuevo pedido de ${name}" />
+  <input type="hidden" name="Producto" value="${name}" />
+  
+  <input
+    type="text"
+    class="form__input"
+    placeholder="NOMBRE COMPLETO JUGADORA"
+    name="Nombre"
+    required />
+  <input
+    type="text"
+    class="form__input"
+    placeholder="CATEGORÍA Y LETRA"
+    name="Categoria"
+    required />
+  <input type="email" class="form__input" placeholder="EMAIL" name="Email" required style="margin-bottom: 2rem;" />
+  ${selectorsHTML}
+  ${otherInputsHTML}
+  <span class="form__text">
+    Siempre revise que toda la información está correctamente escrita y rellene todos los campos necesarios. Escriba a <a href="mailto:info@cffolympia.es">info@cffolympia.es</a>.
+  </span>
+  <button class="form__submit" type="submit">REALIZAR PEDIDO</button>
+</form>
         </div>
       </aside>
     `;
