@@ -82,7 +82,7 @@ let SEASON_SENIOR_A = [
     date: "Oct 25, 2026 00:00:00",
     shortDate: "25/10/26",
     isLocal: false,
-    result: "",
+    result: "1-1",
     mapsURL: "",
     liveURL: "",
     hashtag: "#OLYMPIAPOZUELO",
